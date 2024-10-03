@@ -1,0 +1,1210 @@
+.cabecera{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+.cabvacio{
+    width: 80%;
+    height: 40px;
+    left: 70%;
+    background-color: black;
+}
+
+.nosotros{
+    width: 8%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-left: 30px;
+}
+.Perfil{
+    width: 4%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.text_menu{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+/* ESTILOS DE LOGIN*/
+#singin{
+    width: 100%;
+min-height: 1050px;
+background: rgb(168, 47, 47);
+padding: 0px;
+margin: 0px ;
+display: flex ;
+
+}
+.login1{
+    width: 50%;
+min-height: 900px;
+background: rgb(179, 134, 134);
+padding: 0px;
+margin: 0px ;
+
+}
+.login2{
+  width: 50%;
+  min-height: 900px;
+  background: rgb(179, 134, 134);
+  padding: 0px;
+  margin: 0px ;
+
+}
+.img1{
+    width: 100%;
+  height: 100%;
+  top: 100px;
+  background: url("images/login01.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  left: 8px;
+  overflow: hidden;
+}
+
+.img2{
+    width: 100%;
+  height: 100%;
+  background: url("images/fondogym1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  top: 384px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+ justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+ 
+}
+.text1 {
+    width: 509px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 579px;
+    left: 51px;
+    font-family: Inter;
+    font-weight: Black;
+    font-size: 40px;
+    opacity: 1;
+    text-align: left;
+  }
+  .text2 {
+    width: 290px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 660px;
+    left: 55px;
+    font-family: Inter;  
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .cajadelogo{
+    width: 440px;
+    height: 700px;
+    background :transparent;
+   position: absolute;
+    top: 300px;
+  
+    
+  }
+  .img1logo{
+    width: 100%;
+    height: 40%;
+    background :transparent;
+    left: 10%;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+  
+  }
+ 
+  
+ 
+  .cajadetexto{
+    width: 100%;
+    height: 60%;
+    background :transparent;
+  }
+  .cajalogin1{
+    width: 100%;
+    height: 12.57%;
+    background :transparent;
+    display: flex;
+    align-items: center;
+  }  .cajalogin11{
+    width: 100%;
+    height: 12.57%;
+    background :transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(240, 54, 54);
+    text-decoration: underline;
+
+  }
+ 
+  .imagenesproducto1:hover {
+    transform: scale(1.2); 
+}
+.imagenesproducto2:hover {
+  transform: scale(1.2);
+}
+.cre:hover {
+  transform: scale(1.2);
+}
+ 
+.peques:hover {
+  transform: scale(1.5); 
+}
+.cajalogin2{
+  width: 100%;
+  height: 12.57%;
+  background :transparent;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  font-size: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+
+}
+.cajalogin4{
+  width: 100%;
+  height: 4.57%;
+  background :transparent;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+.cajalogin6{
+  width: 100%;
+  height: 12.57%;
+  background :transparent;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.cajalogin7 {
+  width: 100%;
+  height: 12.57%;
+  background :transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.iconosdemenu{
+    width: 200px;
+    height: auto;
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-around;
+   
+}
+.textomenu{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px;
+    text-decoration: underline;
+    
+}
+/*  ESTILOS DEL FOOTER*/
+#piedepagina{
+  width: 100%;
+  min-height: 400px;
+  background: rgb(168, 149, 149);
+  padding: 0px;
+  margin: 0px ;
+}
+.titulodepie{
+  width: 100%;
+  height: 50px;
+  left: 0%;
+  background-color: black;
+  padding-top: 0%;
+  margin-top: 100PX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+
+}
+.misionyvision{
+  width: 100%;
+  height: 40px;
+  background-color: rgb(34, 32, 32);
+  padding: 0%;
+  display: flex;
+ 
+  color: white;
+  align-items: center;
+ 
+  
+}
+.mision{
+  width: 57.3%;
+  height: 100%;
+display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  align-items: center;
+  margin-bottom: 0%;
+  
+  
+}
+
+.vision{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0%;
+  align-items: center;
+
+}
+.misionyvision1{
+  width: 100%;
+  height: 200px;
+  border: 2px ;
+  background-color: rgb(167, 167, 167);
+  padding: 5px;
+  display: flex;
+  padding-top: 40px;
+  
+  
+}
+.mision1{
+  width: 50%;
+  height: 100PX;
+  display: flex;
+  justify-content: center;
+  border-left:20px ;
+  border-right:20px ;
+  font-size: 18px;
+  margin-left: 18px;
+  margin-right: 18px;
+
+  
+  
+}
+
+.vision1{
+  width: 50%;
+  height: 100PX;
+  display: flex;
+  justify-content: center;
+  border-left:20px ;
+  border-right:20px ;
+  font-size: 18px;
+  margin-left: 18px;
+  margin-right: 18px;
+  
+  
+  
+}
+.masinfor{
+  width: 100%;
+  height: 40px;
+  background-color: rgb(173, 171, 171);
+  border-bottom: 3px solid black;
+  margin: 0%;
+  
+}
+.masinfor1{
+  width: 15%;
+  height: 40px;
+  background-color: rgb(173, 171, 171);
+  border-bottom: 3px solid black;
+  margin: 0%;
+  display: flex;
+  justify-content: end;align-items: end;
+}
+.ayuda{
+  width: 100%;
+  height: 40px;
+  background-color: rgb(173, 171, 171);
+  border-bottom: 3px solid black;
+  display: flex;
+}
+.ayuda1{
+  width: 25%;
+  height: 40px;
+  background-color: rgb(173, 171, 171);
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: center; align-items: end;
+  margin: 0%;
+}
+.redes{
+  width: 25%;
+  height: 40px;
+  background-color: rgb(173, 171, 171);
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: center; align-items: end;
+  margin: 0%;
+}
+.cuenta{
+  width: 25%;
+  height: 40px;
+  background-color: rgb(173, 171, 171);
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: center; align-items: end;
+  margin: 0%;
+}
+.ubicacion{
+  width: 25%;
+  height: 40px;
+  background-color: rgb(173, 171, 171);
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: start; align-items: end;
+  margin: 0%;
+}
+
+
+.preguntas{
+  width: 100%;
+  height: 300px;
+  background-color: rgb(173, 171, 171);
+
+  display: flex;
+}
+.ayuda22{
+  width: 25%;
+  height: 180px;
+  background-color: rgb(173, 171, 171);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+
+  margin: 0%;
+}
+.redes22{
+  width: 22%;
+  height: 180px;
+  background-color: rgb(173, 171, 171);
+  display: flex;
+  justify-content: start; align-items: start;
+  margin: 0%;
+}
+.iconos{
+  width: 30%;
+  height: 25px;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-left: 120px;
+
+}
+.icon1111{
+  width: 30px;
+  height: 30px;
+  margin: 7px;
+  color: aqua;
+}
+
+.ubica{
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+ }
+.cuenta22{
+  width: 25%;
+  height: 50px;
+  background-color: rgb(173, 171, 171);
+  flex-direction: column;
+ 
+
+  
+  margin: 0%;
+}
+.ubi{
+  width: 3%;
+  height: 25px;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.ubicacion22{
+  width: 25%;
+  height: 180px;
+  background-color: rgb(173, 171, 171);
+
+  display: flex;
+  justify-content: start; align-items: start;
+  margin: 0%;
+}
+
+
+
+.fin{
+  width: 100%;
+  height: 140px;
+  background-color: rgb(122, 122, 122);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fin1{
+  width: 60%;
+  height: 80px;
+  background-color: rgb(122, 122, 122);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.anclapie{
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* estilos ded detalles de producto*/
+#contenido{
+  width: 100%;
+  height: 800px;
+min-height: 20px;
+background: white;
+padding: 20px;
+margin: 0px ;
+display: flex;
+justify-content: space-around;
+justify-content: flex-start ;
+border-top:10px solid gray ;
+}
+.imagenesproducto1{
+  width: 500px;
+min-height: 565px;
+
+background-image: url(images/detallecompra1.png) ;
+padding: 0px;
+background-size: cover;
+margin: 10px ;
+margin-top: 70px;
+margin-left: 50px;
+border: 2px solid black;
+}
+.imagenesproducto2{
+  width: 500px;
+min-height: 565px;
+background-image: url(images/detallecompra2.png) ;
+background-size: cover;
+padding: 0px;
+margin: 10px ;
+margin-top: 70px;
+margin-left: 10px;
+border: 2px solid black;
+}
+#informacion{
+  width: 40%;
+  height: 500px;
+min-height: 20px;
+background: white(202, 134, 134);
+padding: 0px;
+margin-left: 110px ;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 80px;
+
+
+}
+#conte{
+  width: 450px;
+  height: 450px;
+  min-height: 50px;
+  background: white;
+  padding: 0px;
+  margin: 0px ;
+  
+  
+}
+.titulo{
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+.preciotitulo{
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: safe;
+  
+}
+.cagu{
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.calificaciontitulo{
+  width: 50%;
+  height: 100%;
+  background-color: white(153, 32, 98);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.iconocali{
+  width: 25px;
+  height: 25px;
+  
+}
+.guardado{
+  width: 50%;
+  height: 100%;
+  background-color: white(18, 197, 93);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.inconoguardado{
+  width: 25px;
+  height: 25px;
+}
+.detalles{
+  width: 100%;
+  height: 90%;
+  background-color: rgb(241, 206, 206);
+  border-radius: 10px;
+  margin-top: 10%;
+  padding: 40px;
+}
+.titulodetalle{
+  width: 100%;
+  height: 20%;
+  top: 0%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.infos{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  margin-top:35px;
+
+}
+.infodetalle{
+  width: 50%;
+  height: 70%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.infodetalle1{
+  width: 50%;
+  height: 60%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+.titulotalla{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  
+}
+.tallas{
+  width: 100%;
+  height: 22%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.tallas1{
+  width: 12%;
+  height: 40%;
+  background-color: rgb(216, 215, 215);
+  border-right: 1px solid rgb(27, 26, 26) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+
+}
+.tallas12{
+  width: 12%;
+  height: 40%;
+  background-color: rgb(216, 215, 215);  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.agregarcarrito{
+  width: 100%;
+  height: 12%;
+  background-color:white ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.Otroscolores{
+  width: 100%;
+  height: 12%;
+  background-color:white ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 20%;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  
+}
+
+.agregarcarrito1{
+  width: 60%;
+  height: 60%;
+  background-color:rgb(241, 134, 134) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+#info{
+  width: 100%;
+  height: 150px;
+min-height: 20px;
+background: white;
+padding-top: 0px;
+margin: 0px ;
+display: flex;
+justify-content: space-around;
+
+}
+#texto{
+  width: 50%;
+  height: 100px;
+background: rgb(129, 110, 110);
+padding:0px;
+margin: 0px ;
+
+
+}
+.texto1titulo{
+  width: 100%;
+  height: 10%;
+background: white;
+padding-bottom: 30px;
+margin: 0px ;
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+display: flex;
+justify-content: center;
+align-items: safe;
+}
+
+.texto2{
+  width: 100%;
+  height: 60px;   
+padding:0px;
+margin: 0px ;
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: white;
+
+
+}
+.vacio{
+  width: 16%;
+  height: 100%;
+
+}
+
+.texto22{
+  width: 42%;
+  height: 100%;
+  background-color: gainsboro;
+padding:0px;
+margin: 0px ;
+
+display: flex;
+justify-content: center;
+
+}
+#otros{
+  width: 50%;
+  height: 50px;
+min-height: 20px;
+background: white;
+padding-left:120px;
+margin: 0px ;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+.pequeñas1{
+  width: 65px;
+  height: 85px;
+background-size: cover;
+background-image: url(images/pequeña1.png);
+padding: 0px;
+margin: 5px ;
+margin-left: 2%;
+}
+.pequeñas2{
+  width: 60px;
+
+  height: 85px;
+background-size: cover;
+background-image: url(images/pequeña2.png);
+padding: 0px;
+margin: 5px ;
+
+}
+.pequeñas3{
+  width: 65px;
+  height: 85px;
+  background-size: cover;
+background-image: url(images/pequeña3.png);
+padding: 0px;
+margin: 5px ;
+
+}
+.pequeñas4{
+  width: 65px;
+  height: 85px;
+  background-size: cover;
+background-image: url(images/pequeña4.png);
+padding: 0px;
+
+margin: 5px ;
+
+display: flex;
+}
+.pequeñas5{
+  width: 65px;
+  height: 85px;
+  background-size: cover;
+background-image: url(images/pequeña5.png);
+padding: 0px;
+margin: 5px ;
+
+}
+.pequeñas6{
+  width: 65px;
+  height: 85px;
+  background-size: cover;
+background-image: url(images/pequeña6.png);
+padding: 0px;
+margin: 5px ;
+
+}
+#piedepagina{
+  width: 100%;
+  min-height: 400px;
+  background: rgb(168, 149, 149);
+  padding: 0px;
+  margin: 0px ;
+}
+#productos{
+  width: 100%;
+min-height: 350px;
+background: white;
+padding: 20px;
+margin: 0px ;
+display: flex;
+justify-content: space-around;
+padding-bottom: 100PX;
+}
+.titulo2222{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding-left: 100px;
+  
+}
+/*  ESTILOS DE PERFIL*/
+.contenidocuenta{
+  width: 100%;
+  height: 800px;
+  background-color: white;
+  padding-top: 0px;
+ }
+ .titulocorreo{
+     width: 100%;
+     height: 50px;
+     background-color: white;
+     display: flex;
+     margin-top: 40px;
+ }
+ .logocorreo{
+     width: 50px;
+     height: 50px;
+     border-radius: 100%;
+     background-color: black;
+     margin-left: 90px;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 30px;
+ }
+ .titucorreo{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-weight: bold;
+     display: flex;
+     justify-content: center;
+     align-items: end;
+     width: 100%;
+     height: 50%;
+     margin-left: 10px;
+     font-size: 20px;
+ }
+ .correo{
+     text-decoration: underline;
+     display: flex;
+     justify-content: start;
+     align-items: end;
+     margin-left: 17px;
+ }
+ .tucuenta{
+     width: 100%;
+     height: 35px;
+     background-color: black;
+     color: white;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-weight: bold;
+     display: flex;
+     font-size: 20px;
+     align-items: center;
+     justify-content: space-around;
+ 
+ }
+ .infocuenta{
+     width: 100%;
+     height: 700px;
+     background-color: blue;
+     display: flex;
+ }
+ .letrascorreo{
+     width: 30%;
+     height: 100%;
+     background-color: rgb(211, 209, 209);
+ }
+ .letrasimgcorreo{
+     width: 70%;
+     height: 100%;
+     background-color: rgb(255, 239, 239);;
+     display: flex;
+ }
+ .informacioncuenta{
+     width: 100%;
+     height: 10%;
+     background-color: rgb(211, 209, 209);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: bold;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     margin-left: 40px;
+ }
+ .textos{
+     width: 70%;
+     height: 250px;
+     margin-left: 25%;
+    
+     ;
+     
+ }
+ .cerrar{
+     width: 70%;
+     height: 6%;
+     margin-left: 45%;
+     margin-top: 30px;
+     font-weight: bold;
+     text-decoration: underline;
+ }
+ 
+ .imgtext1{
+     width: 20px;
+     height: 20px;
+     margin-left:148px ;
+     margin-top: 10px;
+ }
+ .imgtext2{
+     width: 20px;
+     height: 20px;
+     margin-left:180px ;
+     margin-top: 10px;
+ }
+ .imgtext3{
+     width: 20px;
+     height: 20px;
+     margin-left:178px ;
+     margin-top: 10px;
+ }
+ .imgtext4{
+     width: 20px;
+     height: 20px;
+     margin-left:150px ;
+     margin-top: 10px;
+ }
+ .letras1{
+     width: 50%;
+     height: 500px;
+     background-color: white;
+     padding-left: 17px;
+     margin-top: 50px;
+     
+     border-radius: 10px;
+     margin-left: 50px;
+ }
+ .letras1:hover{
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+ }
+ 
+                                                      
+ .imgcuenta{
+     width: 70%;
+     height: 100%;
+     background-color: rgb(255, 239, 239);
+     
+ }
+ .fondocuenta{
+     width: 100%;
+     height: 100%;
+     margin-left:-50px ;
+ }
+ .casi1{
+     width: 100%;
+     height: 300px;
+     font-weight: bold;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     margin: 10px;
+     border-radius: 3px;
+     padding-top: 20px;
+     
+ }
+
+
+ .casi4{
+     width: 90%;
+     height: 40px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     text-decoration: underline;
+     margin: 0px;
+     padding: 0px;
+     display: flex;
+     justify-content: space-around;
+     
+ }
+ /* ESILOS DE NOSOTROS*/
+ .contenidonosotros{
+  width: 100%;
+  height: 900px;
+  background-color: rgb(247, 237, 239);
+  display: flex;
+ }
+
+ .textnosotros{
+  width: 40%;
+  height: 100%;
+  background-color: rgb(247, 237, 239);
+  margin-left: 70px;
+  margin-right: 40px;
+  
+ }
+ .noso1{
+  width: 100%;
+  height: 10%;
+ 
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: 29px;
+  font-weight: bold;
+  margin-top: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+
+  text-shadow: 2px 2px 4px black;
+ }
+
+ .noso2{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+  padding-right: 30px;
+  
+ }
+ .noso3{
+  width: 100%;
+  height: 6%;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 25px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+ }
+ .noso4{
+  width: 100%;
+  height: 4%;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 18px;
+  
+  
+  
+ }
+ .noso5{
+  width: 100%;
+  height: 6%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+ }
+ .noso6{
+  width: 100%;
+  height: 2%;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 20px;
+ }
+ .noso7{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+ }
+ .ico:hover{
+  
+  text-shadow: 2px 2px 5px black; /* Sombra del texto */
+  
+  
+ }
+ .columnaiconos{
+  width: 100%;
+  height: 100%;
+ 
+  
+ }
+
+ .iconosnosotros{
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease; /* Transición suave para el efecto hover */
+ }
+ 
+
+
+
+ .imgnosotros{
+  width: 60%;
+  height: 100%;
+  background-image:url(images/nosotrosimg.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .imgnosotros1{
+  width: 300px;
+  height: 300px;
+  margin-top: 600px;
+  margin-left: 200px;
+  color: black;
+ }
+ 
