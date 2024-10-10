@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg" style="background-color: #ffffff">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="../images/logotipo.png" alt="Bootstrap" width="70" height="55>
+                    <img src="../images/logotipo.png" alt="Bootstrap" width="70" height="55">
                   </a>
               <a  href="#" class="navbar-brand "  ></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

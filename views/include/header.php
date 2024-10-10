@@ -14,9 +14,9 @@
         <div class="cabecera">
                <a href="" class="text_menu"> <div class="cabvacio"></div></a>
                <a href="./index.html#piedepagina" class="text_menu"> <div class="nosotros">Contactanos</div></a>
-               <a href="views/nosotros.html" class="text_menu"> <div class="nosotros">Nosotros</div></a>
-               <a href="views/perfil.html" class="text_menu"> <div class="Perfil"> </a>
-               <a href="views/login.html" class="text_menu"> <img src="./views/plantilla/images/perfolincon.png" alt="" width="30" height="30">
+               <a href="views/nosotros.php" class="text_menu"> <div class="nosotros">Nosotros</div></a>
+               <a href="views/perfil.php" class="text_menu"> <div class="Perfil"> </a>
+               <a href="views/login.php" class="text_menu"> <img src="./views/plantilla/images/perfolincon.png" alt="" width="30" height="30">
                 login </a>
             </div>
         </div>
