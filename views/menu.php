@@ -12,15 +12,15 @@
                 
                   
                 <li class="nav-item "  style="margin-left: 620px;">
-                  <a class=" cre nav-link  "  aria-current="page" style="font-weight: 800;" href="views/varones.html" style="font-weight: bold; ">VARONES</a>
+                  <a class=" cre nav-link  "  aria-current="page" style="font-weight: 800;" href="<?php echo BASE_URL?>varones" style="font-weight: bold; ">VARONES</a>
                   
                 </li>
                 <li class="nav-item" style="margin-left: 50px;">
-                  <a class="cre nav-link active" aria-current="page" href="index.html"  style="font-weight: 800; color: red; text-decoration: underline;">MENÚ PRINCIPAL</a>
+                  <a class="cre nav-link active" aria-current="page" href="<?php echo BASE_URL?>menu"  style="font-weight: 800; color: red; text-decoration: underline;">MENÚ PRINCIPAL</a>
                   
                 </li>
                 <li class="nav-item "  style="margin-left: 50px;">
-                  <a class="cre nav-link  "  aria-current="page" href="views/mujeres.html" style="font-weight: bold;">MUJERES</a>
+                  <a class="cre nav-link  "  aria-current="page" href="<?php echo BASE_URL?>mujeres" style="font-weight: bold;">MUJERES</a>
                   
                 </li>
                 
@@ -30,9 +30,9 @@
                 <input class="form-control me-2" type="search" placeholder="Busca un producto" aria-label="Search">
                 <button class="btn btn-outline-danger" type="submit">Buscar</button>
                 <div class="iconosdemenu">
-                <a href="views/carrito.html" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30">
+                <a href="<?php echo BASE_URL?>carrito" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30">
                 </a>
-                <a href="views/carrito.html" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30">
+                <a href="<?php echo BASE_URL?>carrito" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30">
                    </a>
                   </div>
               </form>
@@ -97,8 +97,8 @@
         
         
         <br>
-        <a href="views/detalles.php" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
-        <a href="views/carrito.php" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
+        <a href="<?php echo BASE_URL?>detalles" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
+        <a href="<?php echo BASE_URL?>carrito" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
           <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
         </a>
       </div>
@@ -118,8 +118,8 @@
         
         
         <br>
-        <a href="views/detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
-        <a href="views/carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
+        <a href="<?php echo BASE_URL?>detalles" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
+        <a href="<?php echo BASE_URL?>carrito" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
           <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
         </a>
       </div>
@@ -140,8 +140,8 @@
           
           
           <br>
-          <a href="views/detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
-          <a href="views/carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
+          <a href="<?php echo BASE_URL?>detalles" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
+          <a href="<?php echo BASE_URL?>carrito" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
             <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
         </div>
@@ -162,8 +162,8 @@
           
           
           <br>
-          <a href="views/detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
-          <a href="views/carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
+          <a href="<?php echo BASE_URL?>detalles" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
+          <a href="<?php echo BASE_URL?>carrito" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
             <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
         </div>
@@ -226,8 +226,8 @@
         
         
         <br>
-        <a href="views/detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
-        <a href="views/carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
+        <a href="<?php echo BASE_URL?>detalles" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
+        <a href="<?php echo BASE_URL?>carrito" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
           <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
         </a>
       </div>
@@ -247,8 +247,8 @@
         
         
         <br>
-        <a href="views/detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
-        <a href="views/carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
+        <a href="<?php echo BASE_URL?>detalles" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
+        <a href="<?php echo BASE_URL?>carrito" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
           <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
         </a>
       </div>
@@ -269,8 +269,8 @@
           
           
           <br>
-          <a href="views/detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
-          <a href="views/carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
+          <a href="<?php echo BASE_URL?>detalles" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
+          <a href="<?php echo BASE_URL?>carrito" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
             <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
         </div>
@@ -291,8 +291,8 @@
           
           
           <br>
-          <a href="views/detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
-          <a href="views/carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
+          <a href="<?php echo BASE_URL?>detalles" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
+          <a href="<?php echo BASE_URL?>carrito" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
             <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
         </div>

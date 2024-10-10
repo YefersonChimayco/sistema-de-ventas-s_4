@@ -14,15 +14,15 @@
               
              
             <li class="nav-item "  style="margin-left: 620px;">
-              <a class="nav-link active "  aria-current="page" href="varones.html" style="font-weight: bold; ">VARONES</a>
+              <a class="nav-link active "  aria-current="page" href="<?php echo BASE_URL?>varones" style="font-weight: bold; ">VARONES</a>
               
             </li>
             <li class="nav-item" style="margin-left: 50px;">
-              <a class="nav-link active" aria-current="page" href="../index.html" style="font-weight: bold;  ">MENÚ PRINCIPAL</a>
+              <a class="nav-link active" aria-current="page" href=".<?php echo BASE_URL?>menu" style="font-weight: bold;  ">MENÚ PRINCIPAL</a>
               
             </li>
             <li class="nav-item "  style="margin-left: 50px;">
-              <a class="nav-link active "  aria-current="page" href="mujeres.html" style="font-weight: bold;">MUJERES</a>
+              <a class="nav-link active "  aria-current="page" href="<?php echo BASE_URL?>mujeres" style="font-weight: bold;">MUJERES</a>
               
             </li>
             
@@ -32,9 +32,9 @@
             <input class="form-control me-2" type="search" placeholder="Busca un producto" aria-label="Search">
             <button class="btn btn-outline-danger" type="submit">Buscar</button>
             <div class="iconosdemenu">
-            <a href="carrito.html" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30"style="background-color: red; border-radius:10px;">
+            <a href="<?php echo BASE_URL?>carrito" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30"style="background-color: red; border-radius:10px;">
             </a>
-            <a href="carrito.html" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30" style="background-color: red; border-radius:10px;">
+            <a href="<?php echo BASE_URL?>carrito" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30" style="background-color: red; border-radius:10px;">
                </a>
               </div>
           </form>
@@ -56,7 +56,7 @@
      </div>
   </div>
    <div class="w-50" style="display: flex ; justify-content:center ; justify-content: space-around; align-items: end;" >
-    <a  href="login.html" class="btn btn-dark" style="width: 300px; height: 40px; border-bottom: 5px solid gray;border-right: 5px solid gray; display: flex; align-items: end; padding: 0%;
+    <a  href="<?php echo BASE_URL?>login" class="btn btn-dark" style="width: 300px; height: 40px; border-bottom: 5px solid gray;border-right: 5px solid gray; display: flex; align-items: end; padding: 0%;
     justify-content: center;  font-family: Georgia, 'Times New Roman', Times, serif;">Pagar Todo
       <img src="images/flechablanca.png" alt="" width="130" height="35" style="margin-left: 40px;">
     </a>
@@ -184,8 +184,8 @@
           <a href="https://www.pagoefectivo.la/pe/" target="_blank"><img class="col-3 m-2" src="../images/discover.png" alt=""></a>
       </div>
       <div class="text-center d-grid gap-2 col-6 mx-auto">
-          <a href="login.html" class="btn btn-warning">Pagar</a>
-          <a href="../index.html" class="btn btn-dark">Seguir Comprando</a>
+          <a href="<?php echo BASE_URL?>login" class="btn btn-warning">Pagar</a>
+          <a href="<?php echo BASE_URL?>menu" class="btn btn-dark">Seguir Comprando</a>
       </div>
   </div>
  

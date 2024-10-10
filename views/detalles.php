@@ -1,6 +1,6 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #ffffff">
       <div class="container-fluid">
-          <a class="navbar-brand p-0" href="views/login.html">
+          <a class="navbar-brand p-0" href="<?php echo BASE_URL?>login">
               <img src="images/logotipo.png" alt="Bootstrap" width="70" height="55">
             </a>
         <a  href="#"class="navbar-brand "  ></a>
@@ -13,15 +13,15 @@
               
        
             <li class="nav-item "  style="margin-left: 620px;">
-              <a class="nav-link active "  aria-current="page" href="varones.html" style="font-weight: bold; ">VARONES</a>
+              <a class="nav-link  "  aria-current="page" href="<?php echo BASE_URL?>varones" style="font-weight: bold; ">VARONES</a>
               
             </li>
             <li class="nav-item" style="margin-left: 50px;">
-              <a class="nav-link active" aria-current="page" href="../index.html" style="font-weight: bold;  ">MENÚ PRINCIPAL</a>
+              <a class="nav-link " aria-current="page" href="<?php echo BASE_URL?>menu" style="font-weight: bold;  ">MENÚ PRINCIPAL</a>
               
             </li>
             <li class="nav-item "  style="margin-left: 50px;">
-              <a class="nav-link active "  aria-current="page" href="mujeres.html" style="font-weight: bold;">MUJERES</a>
+              <a class="nav-link  "  aria-current="page" href="<?php echo BASE_URL?>mujeres" style="font-weight: bold;">MUJERES</a>
               
             </li>
          
@@ -30,9 +30,9 @@
             <input class="form-control me-2" type="search" placeholder="Busca un producto" aria-label="Search">
             <button class="btn btn-outline-danger" type="submit">Buscar</button>
             <div class="iconosdemenu">
-            <a href="carrito.html" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30">
+            <a href="<?php echo BASE_URL?>carrito" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30">
             </a>
-            <a href="carrito.html" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30">
+            <a href="<?php echo BASE_URL?>carrito" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30">
                </a>
               </div>
           </form>
@@ -49,11 +49,11 @@
             <div class=" preciotitulo" style="font-family: 'Courier New', Courier, monospace;">$66.00 DOLARES</div>
             <div class=" cagu">
                   <div class="calificaciontitulo">
-                    <a href="carrito.html" class="btn btn-outline-danger"  style="width: 222px;"   >Puntuar <img  class="inconoguardado" src="images/solaestrella.png" alt=""></a>
+                    <a href="<?php echo BASE_URL?>carrito" class="btn btn-outline-danger"  style="width: 222px;"   >Puntuar <img  class="inconoguardado" src="images/solaestrella.png" alt=""></a>
                   </div>
                   <div class="guardado">
-                     <a href="guardado.html"> </a>
-                     <a href="carrito.html" class="btn btn-outline-danger"  style="width: 222px;"   >Guardar <img  class="inconoguardado" src="images/iconoguardado.png" alt=""></a>
+                     <a href="<?php echo BASE_URL?>carrito"> </a>
+                     <a href="<?php echo BASE_URL?>carrito" class="btn btn-outline-danger"  style="width: 222px;"   >Guardar <img  class="inconoguardado" src="images/iconoguardado.png" alt=""></a>
                      
                   </div>
             </div>
@@ -107,9 +107,9 @@
                   </div>
             </div>
             <div class=" agregarcarrito" style="display: flex; justify-content: space-around;">
-             <a href="../index.html"> <button class=" cre btn btn-danger  " style="width: 200px; height: 50px; margin-top: 30px;" type="submit">Seguir Comprando</button></a>
+             <a href="<?php echo BASE_URL?>menu"> <button class=" cre btn btn-danger  " style="width: 200px; height: 50px; margin-top: 30px;" type="submit">Seguir Comprando</button></a>
               <br>
-              <a href="carrito.html"> <button class=" cre btn btn-dark  " style="width: 200px; height: 50px; margin-top: 30px;" type="submit">Agregar al Carrito</button></a>
+              <a href="<?php echo BASE_URL?>carrito"> <button class=" cre btn btn-dark  " style="width: 200px; height: 50px; margin-top: 30px;" type="submit">Agregar al Carrito</button></a>
               
             </div>
             
@@ -200,8 +200,8 @@
           
           
           <br>
-          <a href="detalles.html" class="cre btn btn-danger"  style="width: 222px;"   >ver detalles</a>
-          <a href="carrito.html" class="cre btn btn-dark" style="width: 222px;"      >Agregar al carrito
+          <a href="<?php echo BASE_URL?>detalles" class="cre btn btn-danger"  style="width: 222px;"   >ver detalles</a>
+          <a href="<?php echo BASE_URL?>carrito" class="cre btn btn-dark" style="width: 222px;"      >Agregar al carrito
             <img src="../images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
           
@@ -221,8 +221,8 @@
           
           
           <br>
-          <a href="detalles.html" class="cre btn btn-danger"  style="width: 222px;"   >ver detalles</a>
-          <a href="carrito.html" class="cre btn btn-dark" style="width: 222px;"      >Agregar al carrito
+          <a href="<?php echo BASE_URL?>detalles" class="cre btn btn-danger"  style="width: 222px;"   >ver detalles</a>
+          <a href="<?php echo BASE_URL?>carrito" class="cre btn btn-dark" style="width: 222px;"      >Agregar al carrito
             <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
         </div>
@@ -241,8 +241,8 @@
           
           
           <br>
-          <a href="detalles.html" class="cre btn btn-danger"  style="width: 222px;"   >ver detalles</a>
-          <a href="carrito.html" class="cre btn btn-dark" style="width: 222px;"      >Agregar al carrito
+          <a href="<?php echo BASE_URL?>detalles" class="cre btn btn-danger"  style="width: 222px;"   >ver detalles</a>
+          <a href="<?php echo BASE_URL?>carrito" class="cre btn btn-dark" style="width: 222px;"      >Agregar al carrito
             <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
         </div>

@@ -14,10 +14,11 @@
      <div class="container-fluid p-0" >
         <div class="cabecera">
                <a href="" class="text_menu"> <div class="cabvacio"></div></a>
-               <a href="../index.html#piedepagina" class="text_menu"> <div class="nosotros">Contactanos</div></a>
-               <a href="nosotros.html" class="text_menu"> <div class="nosotros">Nosotros</div></a>
-               <a href="perfil.html" class="text_menu"> <div class="Perfil"> </a>
-               <a href="perfil.html" class="text_menu" style="color:red; display: flex; align-items: center;"> <div class="spinner-border text-danger" role="status"  style="margin-right: 1px;">
+               <a href="<?php echo BASE_URL?>nosotros" class="text_menu"> <div class="nosotros">Contactanos</div></a>
+               <a href="<?php echo BASE_URL?>nosotros" class="text_menu"> <div class="nosotros">Nosotros</div></a>
+               <a href="<?php echo BASE_URL?>perfil" class="text_menu"> <div class="Perfil"> </a>
+               <a href="<?php echo BASE_URL?>login" class="text_menu" style="color:red; display: flex; align-items: center;">
+                 <div class="spinner-border text-danger" role="status"  style="margin-right: 1px;">
                 <span class="visually-hidden"></span>
               </div>
                 login </a>
@@ -37,15 +38,15 @@
                   
                     
                   <li class="nav-item "  style="margin-left: 620px;">
-                    <a class="nav-link active "  aria-current="page" href="varones" style="font-weight: bold; ">VARONES</a>
+                    <a class="nav-link  "  aria-current="page" href="<?php echo BASE_URL?>varones" style="font-weight: bold; ">VARONES</a>
                     
                   </li>
                   <li class="nav-item" style="margin-left: 50px;">
-                    <a class="nav-link active" aria-current="page" href="../index.html" style="font-weight: bold;  ">MENÚ PRINCIPAL</a>
+                    <a class="nav-link " aria-current="page" href="<?php echo BASE_URL?>menu" style="font-weight: bold;  ">MENÚ PRINCIPAL</a>
                     
                   </li>
                   <li class="nav-item "  style="margin-left: 50px;">
-                    <a class="nav-link active "  aria-current="page" href="mujeres.html" style="font-weight: bold;">MUJERES</a>
+                    <a class="nav-link  "  aria-current="page" href="<?php echo BASE_URL?>mujeres" style="font-weight: bold;">MUJERES</a>
                     
                   </li>
                   
@@ -55,9 +56,9 @@
                   <input class="form-control me-2" type="search" placeholder="Busca un producto" aria-label="Search">
                   <button class="btn btn-outline-danger" type="submit">Buscar</button>
                   <div class="iconosdemenu">
-                  <a href="carrito.html" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30">
+                  <a href="<?php echo BASE_URL?>carrito" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30">
                   </a>
-                  <a href="carrito.html" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30">
+                  <a href="<?php echo BASE_URL?>carrito" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30">
                      </a>
                     </div>
                 </form>
@@ -87,7 +88,7 @@
               
               <div class="cajadetexto">
                <div class="cajalogin11">
-                <a href="perfil.html"> <button class="btn btn-outline-dark" type="submit">REGISTRATE</button></a>
+                <a href="<?php echo BASE_URL?>perfil"> <button class="btn btn-outline-dark" type="submit">REGISTRATE</button></a>
                </div>
                <label for="exampleInputEmail1" class="form-label">USUARIO</label>
                <div class="cajalogin1">
@@ -100,7 +101,7 @@
                <div class="cajalogin7">
                <a href="login.html" class="text_menu"> <label for="exampleInputEmail1" class="form-label" style="color: black;">¿olvidaste tu contraseña?</label></a></div>
                <div class="cajalogin7"> 
-                 <a href="../index.html"> <button class="btn btn-danger " type="submit" style="width: 200px;">INICIAR SESION</button></a>
+                 <a href="<?php echo BASE_URL?>menu"> <button class="btn btn-danger " type="submit" style="width: 200px;">INICIAR SESION</button></a>
                </div>
                <div class="cajalogin1"></div>
 
