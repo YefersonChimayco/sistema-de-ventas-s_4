@@ -37,7 +37,7 @@
                   
                     
                   <li class="nav-item "  style="margin-left: 620px;">
-                    <a class="nav-link active "  aria-current="page" href="varones.html" style="font-weight: bold; ">VARONES</a>
+                    <a class="nav-link active "  aria-current="page" href="varones" style="font-weight: bold; ">VARONES</a>
                     
                   </li>
                   <li class="nav-item" style="margin-left: 50px;">

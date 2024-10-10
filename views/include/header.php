@@ -13,10 +13,10 @@
      <div class="container-fluid p-0" >
         <div class="cabecera">
                <a href="" class="text_menu"> <div class="cabvacio"></div></a>
-               <a href="<?php echo BASE_URL?>views/menu.php#piedepagina" class="text_menu"> <div class="nosotros">Contactanos</div></a>
-               <a href="views/nosotros.php" class="text_menu"> <div class="nosotros">Nosotros</div></a>
-               <a href="<?php echo BASE_URL?>views/perfil.php" class="text_menu"> <div class="Perfil"> </a>
-               <a href="<?php echo BASE_URL?>views/login.php" class="text_menu"> <img src="images/perfolincon.png" alt="" width="30" height="30">
+               <a href="<?php echo BASE_URL?>menu" class="text_menu"> <div class="nosotros">Contactanos</div></a>
+               <a href="<?php echo BASE_URL?>nosotros" class="text_menu"> <div class="nosotros">Nosotros</div></a>
+               <a href="<?php echo BASE_URL?>perfil" class="text_menu"> <div class="Perfil"> </a>
+               <a href="<?php echo BASE_URL?>login" class="text_menu"> <img src="images/perfolincon.png" alt="" width="30" height="30">
                 login </a>
             </div>
         </div>
