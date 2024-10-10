@@ -51,7 +51,7 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #ffffff;  border-bottom: 4px solid gray;">
       <div class="container-fluid">
           <a class="navbar-brand" href="views/login.html">
-              <img src="../images/logotipo.png" alt="Bootstrap" width="70" height="55>
+              <img src="images/logotipo.png" alt="Bootstrap" width="70" height="55">
             </a>
         <a  href="#" class="navbar-brand "  ></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,9 +80,9 @@
             <input class="form-control me-2" type="search" placeholder="Busca un producto" aria-label="Search">
             <button class="btn btn-outline-danger" type="submit">Buscar</button>
             <div class="iconosdemenu">
-            <a href="carrito.html" class="text_menu"> <img src="../images/guardarnegro.png" alt="" width="30" height="30">
+            <a href="carrito.html" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30">
             </a>
-            <a href="carrito.html" class="text_menu"> <img src="../images/carritonegro.png" alt="" width="30" height="30">
+            <a href="carrito.html" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30">
                </a>
               </div>
           </form>
@@ -247,7 +247,7 @@
          
         </div>
         <div class="imgcuenta"> 
-         <img  class="fondocuenta"  src="../images/cuentafondo.png" alt="">
+         <img  class="fondocuenta"  src="images/cuentafondo.png" alt="">
         </div>
     </dxiv>
   </div>

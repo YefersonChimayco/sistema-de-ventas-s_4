@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg" style="background-color: #ffffff">
           <div class="container-fluid">
               <a class="navbar-brand" href="login.html">
-                  <img src="../images/logotipo.png" alt="Bootstrap" width="70" height="55>
+                  <img src="../images/logotipo.png" alt="Bootstrap" width="70" height=">
                 </a>
             <a  href="#" class="navbar-brand "  ></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,9 +31,9 @@
                 <input class="form-control me-2" type="search" placeholder="Busca un producto" aria-label="Search">
                 <button class="btn btn-outline-danger" type="submit">Buscar</button>
                 <div class="iconosdemenu">
-                <a href="carrito.html" class="text_menu"> <img src="../images/guardarnegro.png" alt="" width="30" height="30">
+                <a href="carrito.html" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30">
                 </a>
-                <a href="carrito.html" class="text_menu"> <img src="../images/carritonegro.png" alt="" width="30" height="30">
+                <a href="carrito.html" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30">
                    </a>
                   </div>
               </form>
@@ -50,21 +50,21 @@
         </div>
         <div class="carousel-inner ">
           <div class="carousel-item active" data-bs-interval="2200">
-            <img src="../images/carumjer.png" class="d-block w-100" alt="..." width="100%" height="550px">
+            <img src="images/carumjer.png" class="d-block w-100" alt="..." width="100%" height="550px">
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2200">
-            <img src="../images/carumujer1.jpg" class="d-block w-100" alt="..."  width="100%" height="550px">
+            <img src="images/carumujer1.jpg" class="d-block w-100" alt="..."  width="100%" height="550px">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
           <div class="carousel-item"data-bs-interval="2200">
-            <img src="../images/carumujer2.jpg" class="d-block w-100" alt="..."  width="100%" height="500px">
+            <img src="images/carumujer2.jpg" class="d-block w-100" alt="..."  width="100%" height="500px">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Some representative placeholder content for the third slide.</p>
@@ -86,7 +86,7 @@
     
     <div class=" col-lg-3 col-md-4 col-ms-6 p-11 mt-5"  >
       <div class="card">
-      <img src="../images/mujeres011.png" class="card-img-top" alt="..."style="height: 500px;">
+      <img src="images/mujeres011.png" class="card-img-top" alt="..."style="height: 500px;">
       <div class="card-body">
         <h5 class="card-title">LEGIN | EMANA BASIC | VERDE</h5>
         <p class="card-text m-0">Textura gusanito 3D
@@ -94,42 +94,42 @@
         </p>
         <p class="m-0" style="width: 302px; height: 40px; display: flex; 
         align-items: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; color: red; font-weight: 700;"> S/79.99
-          <img src="../images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
+          <img src="images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
         </p>
         
         
         <br>
         <a href="detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
         <a href="carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
-          <img src="../images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
+          <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
         </a>
       </div>
       </div>
   </div>
   <div class=" col-lg-3 col-md-4 col-ms-6 p-11 mt-5"  >
       <div class="card">
-      <img src="../images/mujeres022.png" class="card-img-top width=" alt="..."style="height: 500px;">
+      <img src="images/mujeres022.png" class="card-img-top width=" alt="..."style="height: 500px;">
       <div class="card-body">
         <h5 class="card-title">LEGGIN | EMANA BIOACTIVE -EN4</h5>
         <p class="card-text m-0"> Cosrte Ajustado  <br> Pretina de 10cm de ancho
          </p>
         <p class="m-0" style="width: 302px; height: 40px; display: flex; 
         align-items: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; color: red; font-weight: 700;"> S/79.99
-          <img src="../images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
+          <img src="images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
         </p>
         
         
         <br>
         <a href="detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
         <a href="carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
-          <img src="../images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
+          <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
         </a>
       </div>
       </div>
   </div>
   <div class=" col-lg-3 col-md-4 col-ms-6 p-11 mt-5"  >
       <div class="card">
-      <img src="../images/mujeres033.png" class="card-img-top" alt="..."style="height: 500px;">
+      <img src="images/mujeres033.png" class="card-img-top" alt="..."style="height: 500px;">
       <div class="card-body">
         <h5 class="card-title">LEGGINS |  MALLA NEGRO</h5>
         <p class="card-text m-0">Push Up para resaltar la figura
@@ -137,21 +137,21 @@
         </p>
         <p class="m-0" style="width: 302px; height: 40px; display: flex; 
         align-items: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; color: red; font-weight: 700;"> S/79.99
-          <img src="../images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
+          <img src="images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
         </p>
         
         
         <br>
         <a href="detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
         <a href="carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
-          <img src="../images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
+          <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
         </a>
       </div>
       </div>
   </div>
   <div class=" col-lg-3 col-md-4 col-ms-6 p-11 mt-5"  >
       <div class="card">
-      <img src="../images/mujeres044.png" class="card-img-top" alt="..."style="height: 500px;">
+      <img src="images/mujeres044.png" class="card-img-top" alt="..."style="height: 500px;">
       <div class="card-body">
         <h5 class="card-title">SHORTS | WASH | ROSA</h5>
         <p class="card-text m-0">Push Up para resaltar tu figura
@@ -159,14 +159,14 @@
         </p>
         <p class="m-0" style="width: 302px; height: 40px; display: flex; 
         align-items: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; color: red; font-weight: 700;"> S/79.99
-          <img src="../images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
+          <img src="images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
         </p>
         
         
         <br>
         <a href="detalles.html" class="cre btn btn-danger"  style="width: 180px;"   >ver detalles</a>
         <a href="carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
-          <img src="../images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
+          <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
         </a>
       </div>
       </div>
@@ -184,21 +184,21 @@
           </div>
           <div class="carousel-inner ">
             <div class="carousel-item active" data-bs-interval="2200">
-              <img src="../images/carumujer1.jpg" class="d-block w-100" alt="..." width="100%" height="550px">
+              <img src="images/carumujer1.jpg" class="d-block w-100" alt="..." width="100%" height="550px">
               <div class="carousel-caption d-none d-md-block">
                 <h5></h5>
                 <p></p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2200">
-              <img src="../images/carumjer3.jpg" class="d-block w-100" alt="..."  width="100%" height="550px">
+              <img src="images/carumjer3.jpg" class="d-block w-100" alt="..."  width="100%" height="550px">
               <div class="carousel-caption d-none d-md-block">
                 <h5></h5>
                 <p></p>
               </div>
             </div>
             <div class="carousel-item"data-bs-interval="2200">
-              <img src="../images/carumjer4.png" class="d-block w-100" alt="..."  width="100%" height="500px">
+              <img src="images/carumjer4.png" class="d-block w-100" alt="..."  width="100%" height="500px">
               <div class="carousel-caption d-none d-md-block">
                 <h5></h5>
                 <p></p>
@@ -219,7 +219,7 @@
     <div class="container-fluid  m-0 p-3 mt-4 row">
     <div class=" col-lg-3 col-md-4 col-ms-6 p-11 mt-5"  >
         <div class="card">
-        <img src="../images/mujeres011.png" class="card-img-top" alt="..."style="height: 500px;">
+        <img src="images/mujeres011.png" class="card-img-top" alt="..."style="height: 500px;">
         <div class="card-body">
           <h5 class="card-title">LEGIN | EMANA BASIC | VERDE</h5>
           <p class="card-text m-0">Textura gusanito 3D
@@ -227,42 +227,42 @@
           </p>
           <p class="m-0" style="width: 302px; height: 40px; display: flex; 
           align-items: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; color: red; font-weight: 700;"> S/79.99
-            <img src="../images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
+            <img src="images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
           </p>
           
           
           <br>
           <a href="detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
           <a href="carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
-            <img src="../images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
+            <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
         </div>
         </div>
     </div>
     <div class=" col-lg-3 col-md-4 col-ms-6 p-11 mt-5"  >
         <div class="card">
-        <img src="../images/mujeres022.png" class="card-img-top width=" alt="..."style="height: 500px;">
+        <img src="images/mujeres022.png" class="card-img-top width=" alt="..."style="height: 500px;">
         <div class="card-body">
           <h5 class="card-title">LEGGIN | EMANA BIOACTIVE -EN4</h5>
           <p class="card-text m-0"> Cosrte Ajustado  <br> Pretina de 10cm de ancho
            </p>
           <p class="m-0" style="width: 302px; height: 40px; display: flex; 
           align-items: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; color: red; font-weight: 700;"> S/79.99
-            <img src="../images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
+            <img src="images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
           </p>
           
           
           <br>
           <a href="detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
           <a href="carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
-            <img src="../images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
+            <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
         </div>
         </div>
     </div>
     <div class=" col-lg-3 col-md-4 col-ms-6 p-11 mt-5"  >
         <div class="card">
-        <img src="../images/mujeres033.png" class="card-img-top" alt="..."style="height: 500px;">
+        <img src="images/mujeres033.png" class="card-img-top" alt="..."style="height: 500px;">
         <div class="card-body">
           <h5 class="card-title">LEGGINS |  MALLA NEGRO</h5>
           <p class="card-text m-0">Push Up para resaltar la figura
@@ -270,21 +270,21 @@
           </p>
           <p class="m-0" style="width: 302px; height: 40px; display: flex; 
           align-items: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; color: red; font-weight: 700;"> S/79.99
-            <img src="../images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
+            <img src="images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
           </p>
           
           
           <br>
           <a href="detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
           <a href="carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
-            <img src="../images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
+            <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
         </div>
         </div>
     </div>
     <div class=" col-lg-3 col-md-4 col-ms-6 p-11 mt-5"  >
         <div class="card">
-        <img src="../images/mujeres044.png" class="card-img-top" alt="..."style="height: 500px;">
+        <img src="images/mujeres044.png" class="card-img-top" alt="..."style="height: 500px;">
         <div class="card-body">
           <h5 class="card-title">SHORTS | WASH | ROSA</h5>
           <p class="card-text m-0">Push Up para resaltar tu figura
@@ -292,14 +292,14 @@
           </p>
           <p class="m-0" style="width: 302px; height: 40px; display: flex; 
           align-items: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; color: red; font-weight: 700;"> S/79.99
-            <img src="../images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
+            <img src="images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
           </p>
           
           
           <br>
           <a href="detalles.html" class="cre btn btn-danger"  style="width: 180px;"   >ver detalles</a>
           <a href="carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
-            <img src="../images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
+            <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
         </div>
         </div>

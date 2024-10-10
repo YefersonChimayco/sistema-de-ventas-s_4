@@ -32,9 +32,9 @@
             <input class="form-control me-2" type="search" placeholder="Busca un producto" aria-label="Search">
             <button class="btn btn-outline-danger" type="submit">Buscar</button>
             <div class="iconosdemenu">
-            <a href="carrito.html" class="text_menu"> <img src="../images/guardarnegro.png" alt="" width="30" height="30"style="background-color: red; border-radius:10px;">
+            <a href="carrito.html" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30"style="background-color: red; border-radius:10px;">
             </a>
-            <a href="carrito.html" class="text_menu"> <img src="../images/carritonegro.png" alt="" width="30" height="30" style="background-color: red; border-radius:10px;">
+            <a href="carrito.html" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30" style="background-color: red; border-radius:10px;">
                </a>
               </div>
           </form>
@@ -45,7 +45,7 @@
  <div class="w-100  row m-8 mt-5" style=" width: 100%; height: 100px;"> 
   <div class="w-50">
      <div class="w-100 h-50 " style="background-color: WHITE; display: flex; border-bottom: 3px solid black;" >
-      <img src="../images/carritonegro.png" alt="" width="60" height="50" style="margin-left: 50px;">
+      <img src="images/carritonegro.png" alt="" width="60" height="50" style="margin-left: 50px;">
       <h4 style="font-family: Georgia, 'Times New Roman', Times, serif; align-self: end;  padding: 0px;margin-left: 10px; margin-bottom: 0%;  font-size: 30px; font-weight: bold;">
         TU CARRITO</h4>
      </div>
@@ -58,7 +58,7 @@
    <div class="w-50" style="display: flex ; justify-content:center ; justify-content: space-around; align-items: end;" >
     <a  href="login.html" class="btn btn-dark" style="width: 300px; height: 40px; border-bottom: 5px solid gray;border-right: 5px solid gray; display: flex; align-items: end; padding: 0%;
     justify-content: center;  font-family: Georgia, 'Times New Roman', Times, serif;">Pagar Todo
-      <img src="../images/flechablanca.png" alt="" width="130" height="35" style="margin-left: 40px;">
+      <img src="images/flechablanca.png" alt="" width="130" height="35" style="margin-left: 40px;">
     </a>
    </div>
  </div>
@@ -66,7 +66,7 @@
     <div id="productos " class="w-50  " style="background-color: white;   height: 900px; margin-left: 50px;  " >
         <h3> PRODUCTOS</h3>
         <div class="card w-100 row m-0 mb-3" style="height: 150px; border: 2px solid black;">
-          <img src="../images/hombres022.png"
+          <img src="images/hombres022.png"
               alt="" class="h-100 p-0 col-2">
           <div id="producto" class="p-0 col-4 h-100" style="display: flex; justify-content: center; align-items: center;">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -81,12 +81,12 @@
           <div id="subtotal" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;">S/.90.00</div>
           <div class="col-1">
             <a href="" class="btn btn-danger " style="width: 42px; margin-top: 38px; display: flex; justify-content: center;"      >
-              <img src="../images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
+              <img src="images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
             </a>
            </div>        
        </div>
        <div class="card w-100 row m-0 mb-3" style="height: 120px; border: 2px solid black;">
-        <img src="../images/detallecompra2.png"
+        <img src="images/detallecompra2.png"
             alt="" class="h-100 p-0 col-2">
         <div id="producto" class="p-0 col-4 h-100" style="display: flex; justify-content: center; align-items: center;">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -101,12 +101,12 @@
         <div id="subtotal" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;">S/.90.00</div>
         <div class="col-1">
           <a href="" class="btn btn-danger" style="width: 42px;margin-top: 38px; display: flex; justify-content: center;"      >
-            <img src="../images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
+            <img src="images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
          </div>        
      </div>
      <div class="card w-100 row m-0 mb-3" style="height: 120px; border: 2px solid black;">
-      <img src="../images/pequeña2.png"
+      <img src="images/pequeña2.png"
           alt="" class="h-100 p-0 col-2">
       <div id="producto" class="p-0 col-4 h-100" style="display: flex; justify-content: center; align-items: center;">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -121,7 +121,7 @@
       <div id="subtotal" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;">S/.90.00</div>
       <div class="col-1">
         <a href="" class="btn btn-danger" style="width: 42px; margin-top: 38px; display: flex; justify-content: center;"      >
-          <img src="../images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
+          <img src="images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
         </a>
        </div>        
    </div>
@@ -141,7 +141,7 @@
     <div id="subtotal" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;">S/.90.00</div>
     <div class="col-1">
       <a href="" class="btn btn-danger" style="width: 42px; margin-top: 38px; display: flex; justify-content: center;"      >
-        <img src="../images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
+        <img src="images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
       </a>
      </div>        
  </div>
@@ -161,7 +161,7 @@
   <div id="subtotal" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;">S/.90.00</div>
   <div class="col-1">
     <a href="" class="btn btn-danger" style="width: 42px; margin-top: 38px; display: flex; justify-content: center;"      >
-      <img src="../images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
+      <img src="images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
     </a>
    </div>        
 </div>

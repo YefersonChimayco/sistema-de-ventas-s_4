@@ -1,9 +1,9 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #ffffff">
       <div class="container-fluid">
           <a class="navbar-brand p-0" href="views/login.html">
-              <img src="../images/logotipo.png" alt="Bootstrap" width="70" height="55>
+              <img src="images/logotipo.png" alt="Bootstrap" width="70" height="55">
             </a>
-        <a  href="# class="navbar-brand "  ></a>
+        <a  href="#"class="navbar-brand "  ></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,9 +30,9 @@
             <input class="form-control me-2" type="search" placeholder="Busca un producto" aria-label="Search">
             <button class="btn btn-outline-danger" type="submit">Buscar</button>
             <div class="iconosdemenu">
-            <a href="carrito.html" class="text_menu"> <img src="../images/guardarnegro.png" alt="" width="30" height="30">
+            <a href="carrito.html" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30">
             </a>
-            <a href="carrito.html" class="text_menu"> <img src="../images/carritonegro.png" alt="" width="30" height="30">
+            <a href="carrito.html" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30">
                </a>
               </div>
           </form>
@@ -49,11 +49,11 @@
             <div class=" preciotitulo" style="font-family: 'Courier New', Courier, monospace;">$66.00 DOLARES</div>
             <div class=" cagu">
                   <div class="calificaciontitulo">
-                    <a href="carrito.html" class="btn btn-outline-danger"  style="width: 222px;"   >Puntuar <img  class="inconoguardado" src="../images/solaestrella.png" alt=""></a>
+                    <a href="carrito.html" class="btn btn-outline-danger"  style="width: 222px;"   >Puntuar <img  class="inconoguardado" src="images/solaestrella.png" alt=""></a>
                   </div>
                   <div class="guardado">
                      <a href="guardado.html"> </a>
-                     <a href="carrito.html" class="btn btn-outline-danger"  style="width: 222px;"   >Guardar <img  class="inconoguardado" src="../images/iconoguardado.png" alt=""></a>
+                     <a href="carrito.html" class="btn btn-outline-danger"  style="width: 222px;"   >Guardar <img  class="inconoguardado" src="images/iconoguardado.png" alt=""></a>
                      
                   </div>
             </div>
@@ -121,23 +121,23 @@
       <div id="imagenes_productos" class="col-6 row m-0 d-flex justify-content-center">
         <h4 class="text-center">MAS COLORES</h4>
           <div class="peques col-2" style="background: white; height: 150px;">
-              <img src="../images/pequeña1.png"
+              <img src="images/pequeña1.png"
                   alt="" class="w-100 h-100">
           </div>
           <div class=" peques col-2" style="background: white; height: 150px;  ">
-              <img src="../images/pequeña2.png"
+              <img src="images/pequeña2.png"
                   alt="" class="w-100 h-100">
           </div>
           <div class=" peques col-2" style="background: white; height: 150px;">
-              <img src="../images/pequeña3.png"
+              <img src="images/pequeña3.png"
                   alt="" class="w-100 h-100">
           </div>
           <div class="peques col-2" style="background: white; height: 150px;">
-            <img src="../images/pequeña4.png"
+            <img src="images/pequeña4.png"
                 alt="" class="w-100 h-100">
         </div>
         <div class=" peques col-2" style="background: white; height: 150px;">
-          <img src="../images/pequeña5.png"
+          <img src="images/pequeña5.png"
               alt="" class="w-100 h-100">
       </div>
       
@@ -188,14 +188,14 @@
     
     <div class="col-lg-4 -4col-md-4 col-ms-6 p-11 "  >
         <div class="card " style="min-height: auto; width: 490px; margin-left: 150PX;">
-        <img src="../images/alphacool.png" class="card-img-top" alt="..."style="height: 400px; width: 480px">
+        <img src="images/alphacool.png" class="card-img-top" alt="..."style="height: 400px; width: 480px">
         <div class="card-body">
           <h5 class="card-title">POLO POWER | ALPHA NEGRO</h5>
           <p class="card-text m-0">Material - ALPHACOOL
             <br>(90%  Polyester + 10% Spandex) </p>
           <p class="m-0" style="width: 302px; height: 40px; display: flex; 
           align-items: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; color: red; font-weight: 700;"> S/79.99
-            <img src="../images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
+            <img src="images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
           </p>
           
           
@@ -210,40 +210,40 @@
       </div>
       <div class="  col-lg-4 col-md-4 col-ms-6 p-11"  >
         <div class="card" style="min-height: auto; width: 490px; margin-left: 80PX; ">
-        <img src="../images/detallecompra2.png" class="card-img-top" alt="..." style="height: 400px; width: 488px">
+        <img src="images/detallecompra2.png" class="card-img-top" alt="..." style="height: 400px; width: 488px">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text m-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <p class="m-0" style="width: 302px; height: 40px; display: flex; 
           align-items: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; color: red; font-weight: 700;"> S/79.99
-            <img src="../images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
+            <img src="images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
           </p>
           
           
           <br>
           <a href="detalles.html" class="cre btn btn-danger"  style="width: 222px;"   >ver detalles</a>
           <a href="carrito.html" class="cre btn btn-dark" style="width: 222px;"      >Agregar al carrito
-            <img src="../images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
+            <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
         </div>
         </div>
     </div>
     <div class=" col-lg-4 col-md-4 col-ms-6 p-11"  >
         <div class="card" style="min-height: auto; width: 490px;  margin-left: 20PX;">
-        <img src="../images/pequeña1.png" class="card-img-top" alt="..."style=" height: 400px; width: 490px">
+        <img src="images/pequeña1.png" class="card-img-top" alt="..."style=" height: 400px; width: 490px">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text m-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <p class="m-0" style="width: 302px; height: 40px; display: flex; 
           align-items: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; color: red; font-weight: 700;"> S/79.99
-            <img src="../images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
+            <img src="images/estrellas.png" alt="" width="130px" height="70px" style="margin-left: 200px;">
           </p>
           
           
           <br>
           <a href="detalles.html" class="cre btn btn-danger"  style="width: 222px;"   >ver detalles</a>
           <a href="carrito.html" class="cre btn btn-dark" style="width: 222px;"      >Agregar al carrito
-            <img src="../images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
+            <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
           </a>
         </div>
         </div>

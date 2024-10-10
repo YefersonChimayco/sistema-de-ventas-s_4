@@ -1,7 +1,32 @@
-<nav class="navbar navbar-expand-lg" style="background-color: #ffffff">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL?>views/plantilla/Styles.css">
+
+</head>
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+     <div class="container-fluid p-0" >
+        <div class="cabecera">
+               <a href="" class="text_menu"> <div class="cabvacio"></div></a>
+               <a href="../index.html#piedepagina" class="text_menu"> <div class="nosotros">Contactanos</div></a>
+               <a href="nosotros.html" class="text_menu"> <div class="nosotros">Nosotros</div></a>
+               <a href="perfil.html" class="text_menu"> <div class="Perfil"> </a>
+               <a href="perfil.html" class="text_menu" style="color:red; display: flex; align-items: center;"> <div class="spinner-border text-danger" role="status"  style="margin-right: 1px;">
+                <span class="visually-hidden"></span>
+              </div>
+                login </a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg" style="background-color: #ffffff">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="../images/logotipo.png" alt="Bootstrap" width="70" height="55">
+                    <img src="images/logotipo.png" alt="Bootstrap" width="70" height="55">
                   </a>
               <a  href="#" class="navbar-brand "  ></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,9 +55,9 @@
                   <input class="form-control me-2" type="search" placeholder="Busca un producto" aria-label="Search">
                   <button class="btn btn-outline-danger" type="submit">Buscar</button>
                   <div class="iconosdemenu">
-                  <a href="carrito.html" class="text_menu"> <img src="../images/guardarnegro.png" alt="" width="30" height="30">
+                  <a href="carrito.html" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30">
                   </a>
-                  <a href="carrito.html" class="text_menu"> <img src="../images/carritonegro.png" alt="" width="30" height="30">
+                  <a href="carrito.html" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30">
                      </a>
                     </div>
                 </form>
@@ -57,7 +82,7 @@
           <div class="img2">
               <div class="cajadelogo">
               <div class="img1logo">
-                  <img  class="logologin" src="../images/logotipo.png" alt="" width="300px" height="300px">
+                  <img  class="logologin" src="images/logotipo.png" alt="" width="300px" height="300px">
               </div>     
               
               <div class="cajadetexto">
@@ -89,3 +114,13 @@
   </div>
     </div>
   </div>
+ 
+
+
+
+</body>
+
+
+
+
+</html>
