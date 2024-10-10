@@ -125,8 +125,8 @@ $vista ->obtenerPlantillaControlador();
         
         
         <br>
-        <a href="views/detalles.html" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
-        <a href="views/carrito.html" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
+        <a href="views/detalles.php" class="cre btn btn-danger"  style="width:  180px;"   >ver detalles</a>
+        <a href="views/carrito.php" class="cre btn btn-dark" style="width: 200px;"      >Agregar al carrito
           <img src="images/carritoblanco.png" alt="" width="25" height="25" style="margin-left: 5px;">
         </a>
       </div>
