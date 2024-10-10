@@ -15,9 +15,9 @@
                <a href="" class="text_menu"> <div class="cabvacio"></div></a>
                <a href="<?php echo BASE_URL?>menu" class="text_menu"> <div class="nosotros">Contactanos</div></a>
                <a href="<?php echo BASE_URL?>nosotros" class="text_menu"> <div class="nosotros">Nosotros</div></a>
-               <a href="<?php echo BASE_URL?>perfil" class="text_menu"> <div class="Perfil"> <img src="images/perfolincon.png" alt="" width="30" height="30"></a>
-               <a href="<?php echo BASE_URL?>login" class="text_menu"> 
-                login </a>
+               <a href="<?php echo BASE_URL?>perfil" class="text_menu"> <div class="Perfil"> login </a>
+               <a href="<?php echo BASE_URL?>login" class="text_menu"> <img src="images/perfolincon.png" alt="" width="30" height="30">
+                pefil</a>
             </div>
         </div>
         
