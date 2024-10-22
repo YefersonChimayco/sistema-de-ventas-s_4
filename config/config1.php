@@ -1,8 +1,8 @@
 <?php
 const BD_HOST ='localhost';
-const BD_NAME ='dpwebcom_ventas_chima';
-const BD_USER ='root';
-const BD_PASSWORD='root';
+const BD_NAME ='';
+const BD_USER ='';
+const BD_PASSWORD='';
 const BD_CHARSET = 'utf-8';
 
 //ingresar link de proyecto de cepanel
