@@ -1,24 +1,29 @@
 <?php
-require_once('./model/productoModel.php');
+require_once('../model/productoModel.php');
 $tipo = $_REQUEST ['tipo'];
 # instacncion ña clase model producto
 $objProducto = new productoModel();
 
 if ($tipo=="regitrar") {
     if($_POST);
-    $codigo= $_POST=['codigo'];
-    $nombre= $_POST=['nombre'];
-    $detalle= $_POST=['detalle'];
-    $precio= $_POST=['precio'];
-    $stock= $_POST=['stock'];
-    $categoria= $_POST=['categoria'];
-    $imagen1= $_POST=['imagen1'];
-    $proveedor= $_POST=['proveedor'];
-    if ($codigo=="" || $nombre=="" || $detalle=="" || $precio==""|| $stock==""|| $categoria=="" || $imagen1=="" || $proveedor=="") {
-        $arr_Respuesta = array('status' => false, 'mensaje'
-        =>'error campos vacios');
+    $codigo= $_POST['codigo'];
+    $nombre= $_POST['nombre'];
+    $detalle= $_POST['detalle'];
+    $precio= $_POST['precio'];
+    $stock= $_POST['stock'];
+    $idcategoria= $_POST['idcategoria'];
+    $imagen= $_POST['imagen'];
+    $idproveedor= $_POST['idproveedor'];
+    if ($codigo=="" || $nombre=="" || $detalle=="" || $precio==""|| $stock==""|| $idcategoria=="" || $imagen=="" || $idproveedor=="") {
+        $arr_Respuesta = array('status'=> false, 'mensaje'=>'error campos vacios');
     }else {
-        $arrProducto = $objProducto->registrarProducto($codigo, $nombre, $detalle,$precio, $stock, $categoria, $imagen1, $proveedor);
+        $arrProducto = $objProducto->registrarProducto($codigo, $nombre, $detalle,$precio, $stock, $idcategoria, $imagen, $idproveedor);
+        if ($arrProducto->id>0) {
+            $arr_Respuesta = array('status' => true, 'mensaje' =>'registro exitoso');
+        } else {
+            $arr_Respuesta = array('status' => false, 'mensaje'=>'error al registrar producto');
+        }
+        echo json_encode($arr_Respuesta);
     }
 
 }

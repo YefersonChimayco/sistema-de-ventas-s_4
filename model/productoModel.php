@@ -1,18 +1,18 @@
 <?php
 require_once "../librerias/conexion.php";
-class productoModel{ # el model se comunica con el controlador y la abse de datos
+class productoModel
+{ # el model se comunica con el controlador y la abse de datos
     private $conexion;
     function __construct()
     {
         $this->conexion = new Conexion();
-        $this->conexion = 
-        $this->conexion->connect();
+        $this->conexion = $this->conexion->connect();
     }
-    public function registrarProducto
-        ($codigo, $nombre, $detalle,$precio, $stock, $categoria, $imagen1, $proveedor){
-            $sql = $this->conexion->query("CALL registrarProducto('{$codigo}','{$nombre}','{$detalle}','{$precio}','{$stock}','{$categoria}','{$imagen1}','{$proveedor}')");
-        }
-        
+    public function registrarProducto($codigo, $nombre, $detalle, $precio, $stock, $idcategoria, $imagen, $idproveedor)
+    {
+        $sql = $this->conexion->query("CALL insertproducto('{$codigo}','{$nombre}', '{$detalle}','{$precio}','{$stock}','{$idcategoria}','{$imagen}','{$idproveedor}')");
+        $sql = $sql->fetch_object();
+        return $sql;
+        print_r($codigo);
+    }
 }
- 
-?>

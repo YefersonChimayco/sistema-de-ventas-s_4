@@ -4,11 +4,11 @@ async function registrar_producto(){
     let detalle = document.querySelector('#detalle').value; // solo id
     let precio = document.querySelector('#precio').value;
     let stock = document.querySelector('#stock').value; // solo id
-    let categoria = document.querySelector('#categoria').value;
-    let imagen1 = document.querySelector('#imagen1').value; // solo id
-    let proveedor = document.querySelector('#proveedor').value;
+    let categoria = document.querySelector('#idcategoria').value;
+    let imagen = document.querySelector('#imagen').value; // solo id
+    let proveedor = document.querySelector('#idproveedor').value;
     
-    if (codigo=="" || nombre=="" || detalle=="" || precio==""|| stock==""|| categoria=="" || imagen1=="" || proveedor=="") { // = para asignar valor == para preguntar que valor tiene
+    if (codigo=="" || nombre=="" || detalle=="" || precio==""|| stock==""|| categoria=="" || imagen=="" || proveedor=="") { // = para asignar valor == para preguntar que valor tiene
         alert("error, campos vacios");
         return;
     }
