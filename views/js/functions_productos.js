@@ -32,3 +32,12 @@ try {
     console.log("Oops, ocurrio un error" + e);
 }
 }
+
+async function listar_categorias(){
+    try {
+        let respuesta = await fetch(base_url+'controller/Categoria.php?tipo=listar');
+        console.log(respuesta);
+    } catch (e) {
+        console.log("error al cargar categorias"+ e);
+    }
+}
