@@ -21,9 +21,14 @@ try {
         cache: 'no-cache',
         body :datos
     });
-    console.log(respuesta);
+    json = await respuesta.json();
+    if (json.status) {
+        swal("Registro", json.mensaje,"success");
+    }else{
+        swal("Registro", json.mensaje,"error");
+    }
+
 } catch (e) {
     console.log("Oops, ocurrio un error" + e);
 }
 }
-

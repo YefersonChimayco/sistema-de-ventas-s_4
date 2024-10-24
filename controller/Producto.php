@@ -13,7 +13,7 @@ if ($tipo=="registrar") {
     $stock= $_POST['stock'];
     $idcategoria= $_POST['idcategoria'];
     $imagen= $_POST['imagen'];
-    $idproveedor= $_POST=['idproveedor'];
+    $idproveedor= $_POST['idproveedor'];
     if ($codigo=="" || $nombre=="" || $detalle=="" || $precio==""|| $stock==""|| $idcategoria=="" || $imagen=="" || $idproveedor=="") {
         $arr_Respuesta = array('status'=> false, 'mensaje'=>'error campos vacios');
     }else {
