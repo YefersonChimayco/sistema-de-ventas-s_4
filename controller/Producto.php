@@ -4,7 +4,7 @@ $tipo = $_REQUEST ['tipo'];
 # instacncion ña clase model producto
 $objProducto = new productoModel();
 
-if ($tipo=="regitrar") {
+if ($tipo=="registrar") {
     if($_POST);
     $codigo= $_POST['codigo'];
     $nombre= $_POST['nombre'];
@@ -13,7 +13,7 @@ if ($tipo=="regitrar") {
     $stock= $_POST['stock'];
     $idcategoria= $_POST['idcategoria'];
     $imagen= $_POST['imagen'];
-    $idproveedor= $_POST['idproveedor'];
+    $idproveedor= $_POST=['idproveedor'];
     if ($codigo=="" || $nombre=="" || $detalle=="" || $precio==""|| $stock==""|| $idcategoria=="" || $imagen=="" || $idproveedor=="") {
         $arr_Respuesta = array('status'=> false, 'mensaje'=>'error campos vacios');
     }else {
