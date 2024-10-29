@@ -22,7 +22,9 @@
     </div>
     <div>
         <label for="">categoria: </label>
-            <input type="number"  class="form-control" required id="idcategoria" name="idcategoria">
+            <select type="number"  class="form-control" required id="idcategoria" name="idcategoria"> 
+                <option value=""> seleccione</option>
+            </select>
     </div>
     <div>
         <label for=""> imagen: </label>
