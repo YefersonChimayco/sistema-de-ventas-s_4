@@ -28,7 +28,7 @@
     </div>
     <div>
         <label for=""> imagen: </label>
-            <input type="text" class="form-control"  required id="imagen" name="imagen">
+            <input type="file" class="form-control"  required id="imagen" name="imagen">
     <div>
         <label for="">Proveedor:</label>
             <select type="number"  class="form-control" required id="idproveedor" name="idproveedor"> 
