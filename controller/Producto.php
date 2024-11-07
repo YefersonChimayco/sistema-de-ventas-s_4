@@ -12,7 +12,7 @@ if ($tipo=="registrar") {
     $precio= $_POST['precio'];
     $stock= $_POST['stock'];
     $idcategoria= $_POST['idcategoria'];
-    $imagen= $_POST['imagen'];
+    $imagen= $_FILES['imagen'];
     $idproveedor= $_POST['idproveedor'];
     if ($codigo=="" || $nombre=="" || $detalle=="" || $precio==""|| $stock==""|| $idcategoria=="" || $imagen=="" || $idproveedor=="") {
         $arr_Respuesta = array('status'=> false, 'mensaje'=>'error campos vacios');

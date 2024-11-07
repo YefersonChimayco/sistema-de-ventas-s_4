@@ -1,2 +1,5 @@
 config.php
- 
+asstes/img_productos/*.jpg
+asstes/img_productos/*.jpeg
+asstes/img_productos/*.png
+asstes/img_productos/*.ico

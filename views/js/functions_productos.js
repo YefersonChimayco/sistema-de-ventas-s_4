@@ -39,15 +39,37 @@ async function listar_categorias(){
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
+
             datos.forEach(element => {
-                $('#idcategoria').append($('<option/>'),{
+                $('#idcategoria').append($('<option/>',{
                     text: `${element.nombre}`,
                     value: `${element.id}`
-                });
+                }));
             }); 
+            
         }
         console.log(respuesta);
     } catch (e) {
         console.log("error al cargar categorias"+ e);
     }
 }
+async function listar_proveedores(){
+    try {
+        let respuesta = await fetch(base_url+'controller/Proveedor.php?tipo=listar');
+        json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            datos.forEach(element => {
+                $('#idproveedor').append($('<option/>',{
+                    text: `${element.razon_social}`,
+                    value: `${element.id}`
+                }));
+            }); 
+            
+        }
+        console.log(respuesta);
+    } catch (e) {
+        console.log("error al cargar proveedores"+ e);
+    }
+}
+

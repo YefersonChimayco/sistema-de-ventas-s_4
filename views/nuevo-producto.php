@@ -29,9 +29,11 @@
     <div>
         <label for=""> imagen: </label>
             <input type="text" class="form-control"  required id="imagen" name="imagen">
-    </div><div>
-        <label for=""> proveedor:</label>
-            <input type="number" class="form-control" required  id="idproveedor" name="idproveedor">
+    <div>
+        <label for="">Proveedor:</label>
+            <select type="number"  class="form-control" required id="idproveedor" name="idproveedor"> 
+                <option value=""> seleccione</option>
+            </select>
     </div>
     <br>
     <button type="button"   class="btn btn-success"  onclick="registrar_producto();">registrar</button>
@@ -43,3 +45,4 @@
 
 <script src="<?php echo BASE_URL;?>views/js/functions_productos.js"></script>
 <script >listar_categorias();</script>
+<script >listar_proveedores();</script>
