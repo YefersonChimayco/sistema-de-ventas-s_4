@@ -16,6 +16,7 @@ class ProveedorModel{
         }
         return $arrRespuesta;
     }
+    
 }
 
 ?>

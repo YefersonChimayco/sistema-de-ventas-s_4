@@ -16,6 +16,13 @@ class CategoriaModel{
         }
         return $arrRespuesta;
     }
+    public function registrarCategoria( $nombre, $detalle)
+    {
+        $sql = $this->conexion->query("CALL insertcategoria('{$nombre}', '{$detalle}'')");
+        $sql = $sql->fetch_object();
+        return $sql;
+        print_r($codigo);
+    }
 }
 
 ?>

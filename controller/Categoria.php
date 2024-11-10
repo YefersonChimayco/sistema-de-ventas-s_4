@@ -21,5 +21,26 @@ if ($tipo=="listar") {
     }
     echo json_encode($arr_Respuesta);
 }
+if ($tipo=="registrar") {
+    //print_r($_POST);
+    //echo $_FILES['imagen']['name'];
+    
+     if($_POST);
+   
+    $nombre= $_POST['nombre'];
+    $detalle= $_POST['detalle'];
+    if ( $nombre=="" || $detalle=="" ) {
+        $arr_Respuesta = array('status'=> false, 'mensaje'=>'error campos vacios');
+    }else {
+        $arrCategoria = $arrCategoria->registrar_categoria($nombre, $detalle);
+        if ($arrCategoria->id>0) {
+            $arr_Respuesta = array('status' => true, 'mensaje' =>'registro exitoso');
+            //cargar archivos
+        } else {
+            $arr_Respuesta = array('status' => false, 'mensaje'=>'error al SUBIR producto');
+        }
+        echo json_encode($arr_Respuesta);
+    } 
 
+}
 ?>
