@@ -103,7 +103,7 @@ try {
 }
 }
 async function registrar_compra(){
-    let id_producto = document.getElementById('#id_producto').value; // solo id
+    let id_producto = document.querySelector('#id_producto').value; // solo id
     let cantidad = document.querySelector('#cantidad').value;
     let precio = document.querySelector('#precio').value;
     let id_trabajador = document.querySelector('#id_trabajador').value; // solo id

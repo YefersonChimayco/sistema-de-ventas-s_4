@@ -26,13 +26,12 @@ if ($tipo=="registrar") {
     //echo $_FILES['imagen']['name'];
     
      if($_POST);
-   
     $nombre= $_POST['nombre'];
     $detalle= $_POST['detalle'];
     if ( $nombre=="" || $detalle=="" ) {
         $arr_Respuesta = array('status'=> false, 'mensaje'=>'error campos vacios');
     }else {
-        $arrCategoria = $arrCategoria->registrar_categoria($nombre, $detalle);
+        $arrCategoria = $arrCategoria->registrarCategoria($nombre, $detalle);
         if ($arrCategoria->id>0) {
             $arr_Respuesta = array('status' => true, 'mensaje' =>'registro exitoso');
             //cargar archivos

@@ -16,7 +16,7 @@ if ($tipo=="registrar") {
     if ( $id_producto=="" || $cantidad==""|| $precio==""|| $id_trabajador=="" ) {
         $arr_Respuesta = array('status'=> false, 'mensaje'=>'error campos vacios');
     }else {
-        $arrCompra = $arrCompra->registrar_categoria($id_producto, $cantidad, $precio, $id_trabajador);
+        $arrCompra = $arrCompra->registrarCompra($id_producto, $cantidad, $precio, $id_trabajador);
         if ($arrCompra->id>0) {
             $arr_Respuesta = array('status' => true, 'mensaje' =>'registro exitoso');
             //cargar archivos
