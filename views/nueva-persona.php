@@ -2,7 +2,7 @@
 <form action="" id="formPersona">
     <div>
         <label for=""> numero de indentidad: </label>
-            <input type="text"  class="form-control" required id="nro_identidad" name="nro_identidad" >
+            <input type="number"  class="form-control" required id="nro_identidad" name="nro_identidad" >
     </div>
     <div>
         <label for=""> razon_social: </label>
@@ -10,50 +10,47 @@
     </div>
     <div>
         <label for=""> telefono: </label>
-            <input type="text" class="form-control" required id="telefono" name="telefono" >
+            <input type="number" class="form-control" required id="telefono" name="telefono" >
     </div>
     <div>
         <label for=""> correo:</label>
-            <input type="number" class="form-control"  required id="correo" name="correo">
+            <input type="text" class="form-control"  required id="correo" name="correo">
     </div>
     <div>
         <label for=""> departamento:</label>
-            <input type="number" class="form-control" required id="departamento" name="departamento" >
+            <input type="text" class="form-control" required id="departamento" name="departamento" >
     </div>
     <div>
         <label for="">provincia: </label>
-            <select type="number"  class="form-control" required id="provincia" name="provincia"> 
-                
-            </select>
+        <input type="text" class="form-control" required id="departamento" name="departamento" >
     </div>
     <div>
         <label for=""> distrito: </label>
-            <input type="file" class="form-control"  required id="distrito" name="distrito">
+            <input type="text" class="form-control"  required id="distrito" name="distrito">
+            
     <div>
         <label for="">cod_postal:</label>
-            <select type="number"  class="form-control" required id="cod_postal" name="cod_postal"> 
-             
-            </select>
+            <input type="number"  class="form-control" required id="cod_postal" name="cod_postal">     
     </div>
     <div>
         <label for=""> direccion:</label>
-            <input type="number" class="form-control" required id="direccion" name="direccion" >
+            <input type="text" class="form-control" required id="direccion" name="direccion" >
     </div>
     <div>
         <label for=""> rol:</label>
-            <input type="number" class="form-control" required id="rol" name="rol" >
+            <input type="text" class="form-control" required id="rol" name="rol" >
     </div>
     <div>
         <label for=""> password:</label>
-            <input type="number" class="form-control" required id="password" name="password" >
+            <input type="text" class="form-control" required id="password" name="password" >
     </div>
     <div>
         <label for=""> estado:</label>
-            <input type="number" class="form-control" required id="estado" name="estado" >
+            <input type="text" class="form-control" required id="estado" name="estado" >
     </div>
     <div>
         <label for=""> fecha_reg:</label>
-            <input type="number" class="form-control" required id="fecha_reg" name="fecha_reg" >
+            <input type="date" class="form-control" required id="fecha_reg" name="fecha_reg" >
     </div>
 
     <br>

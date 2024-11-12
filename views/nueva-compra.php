@@ -2,15 +2,15 @@
 <form action="" id="formCompra">
     <div>
         <label for=""> id del producto: </label>
-            <input type="text"  class="form-control" required id="id_producto" name="id_producto" >
+            <input type="number"  class="form-control" required id="id_producto" name="id_producto" >
     </div>
     <div>
         <label for=""> cantidad: </label>
-            <input type="text" class="form-control" required id="cantidad" name="cantidad" >
+            <input type="number" class="form-control" required id="cantidad" name="cantidad" >
     </div>
     <div>
         <label for=""> precio: </label>
-            <input type="text" class="form-control" required id="precio" name="precio" >
+            <input type="number" class="form-control" required id="precio" name="precio" >
     </div>
     <div>
         <label for=""> id_trabajador:</label>
