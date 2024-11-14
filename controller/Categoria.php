@@ -31,7 +31,7 @@ if ($tipo=="registrar") {
     if ( $nombre=="" || $detalle=="" ) {
         $arr_Respuesta = array('status'=> false, 'mensaje'=>'error campos vacios');
     }else {
-        $arrCategoria = $arrCategoria->registrarCategoria($nombre, $detalle);
+        $arrCategoria = $objCategoria->registrarCategoria($nombre, $detalle);
         if ($arrCategoria->id>0) {
             $arr_Respuesta = array('status' => true, 'mensaje' =>'registro exitoso');
             //cargar archivos

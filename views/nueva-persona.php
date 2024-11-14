@@ -14,7 +14,7 @@
     </div>
     <div>
         <label for=""> correo:</label>
-            <input type="text" class="form-control"  required id="correo" name="correo">
+            <input type="email" class="form-control"  required id="correo" name="correo">
     </div>
     <div>
         <label for=""> departamento:</label>
@@ -22,7 +22,7 @@
     </div>
     <div>
         <label for="">provincia: </label>
-        <input type="text" class="form-control" required id="departamento" name="departamento" >
+        <input type="text" class="form-control" required id="provincia" name="provincia" >
     </div>
     <div>
         <label for=""> distrito: </label>
@@ -61,5 +61,5 @@
 </div>
 
 
-<script src="<?php echo BASE_URL;?>views/js/functions_productos.js"></script>
+<script src="<?php echo BASE_URL;?>views/js/functions_persona.js"></script>
 

@@ -17,4 +17,4 @@
 </div>
 
 
-<script src="<?php echo BASE_URL;?>views/js/functions_productos.js"></script>
+<script src="<?php echo BASE_URL;?>views/js/functions_categoria.js"></script>

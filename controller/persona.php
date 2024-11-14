@@ -15,7 +15,7 @@ if ($tipo=="registrar") {
     $correo= $_POST['correo'];
     $departamento= $_POST['departamento'];
     $provincia= $_POST['provincia'];
-    $distrito= 'distrito';
+    $distrito= $_POST ['distrito'];
     $cod_postal= $_POST['cod_postal'];
     $direccion= $_POST['direccion'];
     $rol= $_POST['rol'];
@@ -27,7 +27,7 @@ if ($tipo=="registrar") {
         $arr_Respuesta = array('status'=> false, 'mensaje'=>'error campos vacios');
     }else {
         $arrPersona= $objPersona->registrarPersona($nro_identidad, $razon_social, $telefono,$correo, $departamento, $provincia, $distrito, $cod_postal, $direccion, $rol, $password, $estado, $fecha_reg);
-        if ($arrPersona->id>0) {
+        if ($arrPersona-> id > 0) {
             $arr_Respuesta = array('status' => true, 'mensaje' =>'registro exitoso');
             //cargar archivos
            
