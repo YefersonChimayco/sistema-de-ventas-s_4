@@ -14,5 +14,10 @@ class personaModel
         $sql = $sql->fetch_object();
         return $sql;
     }
+    public function buscarpersonapordni($nro_identidad){
+        $sql = $this->conexion->query("SELECT*FROM persona WHERE nro_identidad='{$nro_identidad}'");
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
     
 }

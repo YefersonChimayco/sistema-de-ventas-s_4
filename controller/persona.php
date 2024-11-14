@@ -22,17 +22,18 @@ if ($tipo=="registrar") {
     $password= $_POST['password'];
     $estado= $_POST['estado'];
     $fecha_reg= $_POST['fecha_reg'];
+    $secure_password = password_hash($nro_identidad,PASSWORD_DEFAULT);
     
     if ($nro_identidad=="" || $razon_social=="" || $telefono=="" || $correo==""|| $departamento==""|| $provincia=="" || $distrito=="" || $cod_postal==""|| $direccion==""|| $rol==""|| $password==""|| $estado==""|| $fecha_reg=="") {
         $arr_Respuesta = array('status'=> false, 'mensaje'=>'error campos vacios');
     }else {
-        $arrPersona= $objPersona->registrarPersona($nro_identidad, $razon_social, $telefono,$correo, $departamento, $provincia, $distrito, $cod_postal, $direccion, $rol, $password, $estado, $fecha_reg);
+        $arrPersona= $objPersona->registrarPersona($nro_identidad, $razon_social, $telefono,$correo, $departamento, $provincia, $distrito, $cod_postal, $direccion, $rol, $secure_password, $estado, $fecha_reg);
         if ($arrPersona-> id > 0) {
             $arr_Respuesta = array('status' => true, 'mensaje' =>'registro exitoso');
             //cargar archivos
            
         } else {
-            $arr_Respuesta = array('status' => false, 'mensaje'=>'error al SUBIR producto');
+            $arr_Respuesta = array('status' => false, 'mensaje'=>'error al SREGISTRAR persona');
         }
         echo json_encode($arr_Respuesta);
     } 

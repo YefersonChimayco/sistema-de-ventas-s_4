@@ -1,4 +1,4 @@
-<div class="container form-nproduct " >
+<div class="container form-nproduct  " >
 <form action="" id="formCategoria">
     <div>
         <label for=""> nombre: </label>
@@ -13,6 +13,9 @@
     <button type="button"   class="btn btn-success"  onclick="registrar_categoria();">registrar</button>
     </div>
     </div>
+    <div class="text-center">
+   <a href="<?php echo BASE_URL?>administracion" class="cre btn btn-danger m-20" style="width: 300px;">Volver a Panel de Administración</a>
+</div>
 </form>
 </div>
 
