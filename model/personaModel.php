@@ -19,5 +19,12 @@ class personaModel
         $sql = $sql->fetch_object();
         return $sql;
     }
-    
+    public function obtener_proveedor(){
+        $arrRespuesta = array();
+        $respuesta = $this->conexion->query("SELECT*FROM persona where rol='proveedor'");
+        while ($objeto = $respuesta->fetch_object()) {
+            array_push($arrRespuesta,$objeto);
+        }
+        return $arrRespuesta;
+    }
 }

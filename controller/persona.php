@@ -37,5 +37,21 @@ if ($tipo=="registrar") {
         }
         echo json_encode($arr_Respuesta);
     } 
-
+    if ($tipo=="listar") {
+        $arr_Respuesta = array('status'=> false, 'contenido'=>'');
+        $arr_Persona = $objPersona-> obtener_proveedor();
+        if (!empty($arr_Persona)) {// recorremos el array pra agregar la opciones de las categorias
+            for ($i=0; $i <count($arr_Persona) ; $i++) { 
+                $id_persona = $arr_Persona[$i]->razon_social;
+                $persona = $arr_Persona[$i]->id; 
+                $opciones='
+                <a href=" class ="btn btn-success"><i class="fa fa-pencil"></i> </a>
+                ';
+                $arr_Persona[$i]->options= $opciones;
+            }
+            $arr_Respuesta['status']= true;
+            $arr_Respuesta['contenido']= $arr_Persona;
+        }
+        echo json_encode($arr_Respuesta);
+    }
 }

@@ -8,6 +8,12 @@ class CategoriaModel{
         $this->conexion = new Conexion();
         $this->conexion = $this->conexion->connect();
     }
+    public function obtener_categoria($id){
+        $respuesta = $this->conexion->query("SELECT * FROM categoria WHERE id ='{$id}' ");
+        $objeto = $respuesta->fetch_object();
+        return $objeto;
+    }
+
     public function obtener_categorias(){
         $arrRespuesta = array();
         $respuesta = $this->conexion->query("SELECT*FROM categoria");
