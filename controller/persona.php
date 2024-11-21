@@ -37,9 +37,9 @@ if ($tipo=="registrar") {
         }
         echo json_encode($arr_Respuesta);
     } 
-    if ($tipo=="listar") {
+    if ($tipo=="listar_proveedor") {
         $arr_Respuesta = array('status'=> false, 'contenido'=>'');
-        $arr_Persona = $objPersona-> obtener_proveedor();
+        $arr_Persona = $objPersona-> obtener_proveedores();
         if (!empty($arr_Persona)) {// recorremos el array pra agregar la opciones de las categorias
             for ($i=0; $i <count($arr_Persona) ; $i++) { 
                 $id_persona = $arr_Persona[$i]->razon_social;
