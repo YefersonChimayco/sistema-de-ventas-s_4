@@ -4,8 +4,10 @@
     height: 40px;
     background-color: black;
     display: flex;
-    justify-content: flex-end;
+    padding-left: 1090px;
+    justify-content: space-between;
 }
+
 .cabvacio{
     width: 70%;
     height: 40px;
