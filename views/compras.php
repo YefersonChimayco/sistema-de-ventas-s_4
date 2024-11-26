@@ -5,19 +5,18 @@
             <thead class="thead-warning">
                 <tr>
                     <th>Nro</th>
-                    <th>Código</th>
-                    <th>Nombre</th>
-                    <th>Stock</th>
-                    <th>Categoría</th>
-                    <th>Proveedor</th>
-                    <th>Acciones</th>
+                    <th>id del producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>id del Trabajador</th>
+          
                 </tr>
             </thead>
-            <tbody id="tbl_producto">
+            <tbody id="tbl_compra">
                 
             </tbody>
         </table>
     </div>
 </div>
 </body>
-<script src="<?php echo BASE_URL;?>views/js/functions_productos.js"></script>
+<script src="<?php echo BASE_URL;?>views/js/functions_compra.js"></script>

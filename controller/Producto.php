@@ -28,7 +28,8 @@ if ($tipo=="listar") {
         $arr_Respuesta['contenido']= $arr_Productos;
     }
     echo json_encode($arr_Respuesta);
-}if ($tipo=="registrar") {
+}
+if ($tipo=="registrar") {
     //print_r($_POST);
     //echo $_FILES['imagen']['name'];
     

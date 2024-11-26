@@ -28,6 +28,7 @@ class CategoriaModel{
         $sql = $sql->fetch_object();
         return $sql;
         print_r($codigo);
+        
     }
 }
 

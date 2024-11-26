@@ -15,5 +15,12 @@ class compraModel
         return $sql;
         print_r($codigo);
     }
-    
+    public function obtener_compra(){
+        $arrRespuesta = array();
+        $respuesta = $this->conexion->query("SELECT*FROM compras");
+        while ($objeto = $respuesta->fetch_object()) {
+            array_push($arrRespuesta,$objeto);
+        }
+        return $arrRespuesta;
+    }
 }

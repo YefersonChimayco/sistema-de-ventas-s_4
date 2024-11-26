@@ -38,3 +38,43 @@ try {
     console.log("Oops, ocurrio un error" + e);
 }
 }
+async function listar_persona(params) {
+    try {
+
+        let respuesta = await fetch(base_url+'controller/persona.php?tipo=listar');
+        json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let cont = 0;
+
+
+            datos.forEach(item => {
+                let  nueva_fila = document.createElement("tr"); 
+                nueva_fila.id = "fila" +item.id; // el item.id es  de la base de datos
+                 cont++; // o +=1
+                nueva_fila.innerHTML =`
+                <th>${cont}</th>
+                <td>${item.nro_identidad}</td>
+                <td>${item.razon_social}</td>
+                <td>${item.telefono}</td>
+                <td>${item.correo}</td>
+                <td>${item.departamento}</td>
+                <td>${item.provincia}</td>
+                <td>${item.distrito}</td>
+                <td>${item.cod_postal}</td>
+                <td>${item.rol}</td>
+                <td>${item.password}</td>
+                <td>${item.estado}</td>
+                <td>${item.fecha_reg}</td>
+                `;
+                document.querySelector('#tbl_persona').appendChild(nueva_fila);
+            }); 
+        } 
+        console.log(respuesta);
+    } catch (e) {
+        console.log("error "+ e);
+    }
+}
+if (document.querySelector('#tbl_persona')){
+    listar_persona();
+}
