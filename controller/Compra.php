@@ -38,10 +38,10 @@ if ($tipo == "listar") {
         // Recorremos el array para agregar las opciones
         for ($i = 0; $i < count($arr_Compra); $i++) {
             // Asignar opciones correctamente formateadas
+          
             $opciones = '
             <a href="#" class="btn btn-success"><i class="fa fa-pencil"></i></a>
             ';
-
             // Agregar las opciones al objeto actual
             $arr_Compra[$i]->options = $opciones;
         }
