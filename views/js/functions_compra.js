@@ -62,3 +62,26 @@ async function listar_compra(params) {
 if (document.querySelector('#tbl_compra')){
     listar_compra();
 }
+async function listar_trabajadores() {
+    try {
+        // Envía la solicitud al controlador de proveedores
+        let respuesta = await fetch(base_url + 'controller/persona.php?tipo=listartrabajador');
+        let json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let contenido_select = '<option value="">Seleccione selecciona trabajador</option>';
+            datos.forEach(element => {
+                contenido_select += '<option value="' + element.id + '">' + element.razon_social + '</option>';
+                // O usando jQuery
+                /*$('#proveedor').append($('<option />', {
+                    text: `${element.nombre}`,
+                    value: `${element.id}`
+                }));*/
+            });
+            document.getElementById('trabajador').innerHTML = contenido_select;
+        }
+        console.log(respuesta);
+    } catch (e) {
+        console.error("Error al cargar trabajador: " + e);
+    }
+}

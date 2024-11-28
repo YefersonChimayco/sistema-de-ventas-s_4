@@ -13,9 +13,10 @@
             <input type="number" class="form-control" required id="precio" name="precio" >
     </div>
     <div>
-        <label for=""> id_trabajador:</label>
+        <label for=""> trabajador:</label>
             <input type="number" class="form-control"  required id="id_trabajador" name="id_trabajador">
-    </div>
+            <option value=""> seleccione</option>
+        </div>
     <br>
     <button type="button"   class="btn btn-success"  onclick="registrar_compra();">registrar</button>
     </div>
@@ -26,3 +27,4 @@
 </form>
 </div>
 <script src="<?php echo BASE_URL;?>views/js/functions_compra.js"></script>
+<script >listar_trabajadores();</script>

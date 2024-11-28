@@ -17,10 +17,11 @@ if ($tipo=="listar") {
             $id_categoria = $arr_Productos[$i]->id_categoria;
             $r_categoria = $objCategoria->obtener_categoria($id_categoria);
             $arr_Productos[$i]->categoria=$r_categoria;
-            $producto = $arr_Productos[$i]->nombre; 
-            
+            $id_producto = $arr_Productos[$i]->id; 
+            //localhost /editarproducto/4
             $opciones='
-            <a href=" class ="btn btn-success"><i class="fa fa-pencil"></i> </a>
+            <a href="'.BASE_URL.'editar_producto/'.$id_producto.'" class="btn btn-warnig"> editar </a>
+            <button onclick="eliminar_producto('.$id_producto.');"> eliminar </button>
             ';
             $arr_Productos[$i]->options= $opciones;
         }
@@ -41,7 +42,7 @@ if ($tipo=="registrar") {
     $stock= $_POST['stock'];
     $idcategoria= $_POST['idcategoria'];
     $imagen= 'imagen';
-    $idproveedor= $_POST['idproveedor'];
+    $idproveedor= $_POST['proveedor'];
     if ($codigo=="" || $nombre=="" || $detalle=="" || $precio==""|| $stock==""|| $idcategoria=="" || $imagen=="" || $idproveedor=="") {
         $arr_Respuesta = array('status'=> false, 'mensaje'=>'error campos vacios');
     }else {
@@ -68,7 +69,16 @@ if ($tipo=="registrar") {
 
 }
 if ($tipo=="ver") {
-    print_r($_POST);
+   /*  print_r($_POST); */
+    $id_producto = $_POST['id_producto'];
+    $arr_Respuesta = $objProducto->verProducto($id_producto);
+    if (empty($arr_Respuesta)) {
+        $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
+
+    } else {
+        $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
+    }
+    
 }
 if ($tipo=="actualizar") {
     print_r($_POST);
