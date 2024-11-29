@@ -21,7 +21,7 @@
                   
                 </li>
                 <li class="nav-item "  style="margin-left: 50px;">
-                  <a class="cre nav-link  active "  aria-current="page" href="<?php echo BASE_URL?>mujeres" style="font-weight: bold;  color: red; text-decoration: underline;">MUJERES</a>
+                  <a class="cre nav-link  active "  aria-current="page" href="<?php echo BASE_URL?>mujeres" style="font-weight:;">MUJERES</a>
                   
                 </li>
                 

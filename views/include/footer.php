@@ -89,10 +89,10 @@
               <br></div>
 
           <p class="cuenta22 ">
-            <a href="views/detalles.html" class="cre btn btn-outline-danger"  style="width: 200px; height: 30PX; margin-top: 20PX; margin-right:100px ; "   >ACCEDER</a>
+            <a href="<?php echo BASE_URL; ?>./login" class="cre btn btn-outline-danger"  style="width: 200px; height: 30PX; margin-top: 20PX; margin-right:100px ; "   >ACCEDER</a>
 
             
-            <a href="views/detalles.html" class="cre btn btn-outline-danger"  style="width: 200px; height: 30PX; margin-top: 20PX; "   >REGISTRATE</a> 
+            <a href="<?php echo BASE_URL; ?>./login" class="cre btn btn-outline-danger"  style="width: 200px; height: 30PX; margin-top: 20PX; "   >REGISTRATE</a> 
              
                        
           </p>
@@ -122,6 +122,10 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- <script src="<?php echo BASE_URL; ?>views/js/jquery-3.6.0.min.js"></script> -->
 <script src="<?php echo BASE_URL; ?>views/js/functions_login.js"></script>
+<script src="<?php echo BASE_URL; ?>views/js/shorts.js"></script>
+  <script src="<?php echo BASE_URL; ?>views/js/menu.js" defer></script>
+	<script src="<?php echo BASE_URL; ?>views/js/cartService.js" defer></script>
+
 </html>
 
     

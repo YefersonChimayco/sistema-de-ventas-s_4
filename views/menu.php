@@ -32,8 +32,8 @@
                 <div class="iconosdemenu">
                 <a href="<?php echo BASE_URL?>carrito" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30">
                 </a>
-                <a href="<?php echo BASE_URL?>carrito" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30">
-                   </a>
+                <a href="<?php echo BASE_URL?>carrito" id="cart"><img src="images/carritonegro.png" alt="" width="30" height="30"><span id="cuenta-carrito">0</span ></a>
+                
                   </div>
               </form>
             </div>
@@ -81,7 +81,13 @@
       </div>
   </div>
   <div class="textomenu">PRODUCTOS GENERALES</div>
-  <div class="container-fluid  m-0 p-3 mt-4 row">
+   <main>
+<section id="productos-container">
+  
+</section>
+
+   </main>
+  <!-- <div class="container-fluid  m-0 p-3 mt-4 row">
     
     <div class="  col-lg-3 col-md-4 col-ms-6 p-11"  >
       <div class="card">
@@ -104,6 +110,7 @@
       </div>
       </div>
   </div>
+
   <div class=" col-lg-3 col-md-4 col-ms-6 p-11"  >
       <div class="card">
       <img src="images/hombres022.png" class="card-img-top" alt="..."style=" height: 400px; width: 440px">
@@ -168,7 +175,7 @@
           </a>
         </div>
         </div>
-    </div>
+    </div> -->
 <div class="textomenu">PRODUCTOS GENERALES</div>
     <div class="container-fluid p-0">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -214,7 +221,7 @@
     <div class="container-fluid  m-0 p-3 mt-4 row">
     <div class="  col-lg-3 col-md-4 col-ms-6 p-11"  >
       <div class="card">
-      <img src="images/hombres044.png" class="card-img-top" alt="..." style="height: 400px; width: 440px">
+      <img src="images/1.png" class="card-img-top" alt="..." style="height: 400px; width: 440px">
       <div class="card-body">
         <h5 class="card-title">CARGO SHORT | GRIS | CON LICRAS</h5>
         <p class="card-text m-0">Bolsillo  cargo con cierre 

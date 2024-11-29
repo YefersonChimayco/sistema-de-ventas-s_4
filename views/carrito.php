@@ -18,7 +18,7 @@
               
             </li>
             <li class="nav-item" style="margin-left: 50px;">
-              <a class="nav-link active" aria-current="page" href=".<?php echo BASE_URL?>menu" style="font-weight: bold;  ">MENÚ PRINCIPAL</a>
+              <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL?>menu" style="font-weight: bold;  ">MENÚ PRINCIPAL</a>
               
             </li>
             <li class="nav-item "  style="margin-left: 50px;">
@@ -34,7 +34,8 @@
             <div class="iconosdemenu">
             <a href="<?php echo BASE_URL?>carrito" class="text_menu"> <img src="images/guardarnegro.png" alt="" width="30" height="30"style="background-color: red; border-radius:10px;">
             </a>
-            <a href="<?php echo BASE_URL?>carrito" class="text_menu"> <img src="images/carritonegro.png" alt="" width="30" height="30" style="background-color: red; border-radius:10px;">
+            <a href="<?php echo BASE_URL?>carrito" id="cart"><img src="images/carritonegro.png" alt="" width="30" height="30"><span id="cuenta-carrito">0</span ></a>
+
                </a>
               </div>
           </form>
@@ -63,110 +64,19 @@
    </div>
  </div>
   <div class="w-100 row m-0">
-    <div id="productos " class="w-50  " style="background-color: white;   height: 900px; margin-left: 50px;  " >
-        <h3> PRODUCTOS</h3>
-        <div class="card w-100 row m-0 mb-3" style="height: 150px; border: 2px solid black;">
-          <img src="images/hombres022.png"
-              alt="" class="h-100 p-0 col-2">
-          <div id="producto" class="p-0 col-4 h-100" style="display: flex; justify-content: center; align-items: center;">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          </div>
-          <div id="precio" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;"><input id="precio_p1" type="hidden" value="30"
-                  readonly>S/.30.00</div>
-          <div id="cantidad" class="col-3 p-4 h-100 row mt-3">
-              <button class="btn btn-danger col-2 h-50 m-1" onclick="restarcantidad();">-</button>
-              <input id="cantidad_p1" type="number" class="col-6 h-50 m-1" value="1">
-              <button class="btn btn-primary col-2 h-50 m-1" onclick="sumarcantidad();">+</button>
-          </div>
-          <div id="subtotal" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;">S/.90.00</div>
-          <div class="col-1">
-            <a href="" class="btn btn-danger " style="width: 42px; margin-top: 38px; display: flex; justify-content: center;"      >
-              <img src="images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
-            </a>
-           </div>        
-       </div>
-       <div class="card w-100 row m-0 mb-3" style="height: 120px; border: 2px solid black;">
-        <img src="images/detallecompra2.png"
-            alt="" class="h-100 p-0 col-2">
-        <div id="producto" class="p-0 col-4 h-100" style="display: flex; justify-content: center; align-items: center;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        </div>
-        <div id="precio" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;"><input id="precio_p1" type="hidden" value="30"
-                readonly>S/.30.00</div>
-        <div id="cantidad" class="col-3 p-4 h-100 row mt-3">
-            <button class="btn btn-danger col-2 h-50 m-1" onclick="restarcantidad();">-</button>
-            <input id="cantidad_p1" type="number" class="col-6 h-50 m-1" value="1">
-            <button class="btn btn-primary col-2 h-50 m-1" onclick="sumarcantidad();">+</button>
-        </div>
-        <div id="subtotal" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;">S/.90.00</div>
-        <div class="col-1">
-          <a href="" class="btn btn-danger" style="width: 42px;margin-top: 38px; display: flex; justify-content: center;"      >
-            <img src="images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
-          </a>
-         </div>        
-     </div>
-     <div class="card w-100 row m-0 mb-3" style="height: 120px; border: 2px solid black;">
-      <img src="images/pequeña2.png"
-          alt="" class="h-100 p-0 col-2">
-      <div id="producto" class="p-0 col-4 h-100" style="display: flex; justify-content: center; align-items: center;">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-      </div>
-      <div id="precio" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;"><input id="precio_p1" type="hidden" value="30"
-              readonly>S/.30.00</div>
-      <div id="cantidad" class="col-3 p-4 h-100 row mt-3">
-          <button class="btn btn-danger col-2 h-50 m-1" onclick="restarcantidad();">-</button>
-          <input id="cantidad_p1" type="number" class="col-6 h-50 m-1" value="1">
-          <button class="btn btn-primary col-2 h-50 m-1" onclick="sumarcantidad();">+</button>
-      </div>
-      <div id="subtotal" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;">S/.90.00</div>
-      <div class="col-1">
-        <a href="" class="btn btn-danger" style="width: 42px; margin-top: 38px; display: flex; justify-content: center;"      >
-          <img src="images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
-        </a>
-       </div>        
-   </div>
-   <div class="card w-100 row m-0 mb-3" style="height: 120px; border: 2px solid black;">
-    <img src="../images/pequeña4.png"
-        alt="" class="h-100 p-0 col-2">
-    <div id="producto" class="p-0 col-4 h-100" style="display: flex; justify-content: center; align-items: center;">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-    </div>
-    <div id="precio" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;"><input id="precio_p1" type="hidden" value="30"
-            readonly>S/.30.00</div>
-    <div id="cantidad" class="col-3 p-4 h-100 row mt-3">
-        <button class="btn btn-danger col-2 h-50 m-1" onclick="restarcantidad();">-</button>
-        <input id="cantidad_p1" type="number" class="col-6 h-50 m-1" value="1">
-        <button class="btn btn-primary col-2 h-50 m-1" onclick="sumarcantidad();">+</button>
-    </div>
-    <div id="subtotal" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;">S/.90.00</div>
-    <div class="col-1">
-      <a href="" class="btn btn-danger" style="width: 42px; margin-top: 38px; display: flex; justify-content: center;"      >
-        <img src="images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
-      </a>
-     </div>        
- </div>
- <div class="card w-100 row m-0 mb-3" style="height: 120px; border: 2px solid black;">
-  <img src="../images/hombres044.png"
-      alt="" class="h-100 p-0 col-2">
-  <div id="producto" class="p-0 col-4 h-100" style="display: flex; justify-content: center; align-items: center;">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-  </div>
-  <div id="precio" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;"><input id="precio_p1" type="hidden" value="30"
-          readonly>S/.30.00</div>
-  <div id="cantidad" class="col-3 p-4 h-100 row">
-      <button class="btn btn-danger col-2 h-50 m-1" onclick="restarcantidad();">-</button>
-      <input id="cantidad_p1" type="number" class="col-6 h-50 m-1" value="1">
-      <button class="btn btn-primary col-2 h-50 m-1" onclick="sumarcantidad();">+</button>
-  </div>
-  <div id="subtotal" class="col-1 p-0 h-100" style="display: flex; justify-content: center; align-items: center;">S/.90.00</div>
-  <div class="col-1">
-    <a href="" class="btn btn-danger" style="width: 42px; margin-top: 38px; display: flex; justify-content: center;"      >
-      <img src="images/tacho.png" alt="" width="25" height="25" style="margin-left: 5px;">
-    </a>
-   </div>        
-</div>
-    </div>
-    <div id="monto" class=" " style=" width: 500PX; height: 500px; margin-left: 10%; margin-top: 3%; border: 2px solid black; padding: 15px; background-color: rgb(245, 227, 230); border-radius: 4PX;">
+   
+	<main class="carrr">
+		<p id="carrito-vacio">Ups! El carrito está vacío, <a href="<?php echo BASE_URL?>menu">elige algunos productos</a></p>
+		<section id="cart-container">
+		</section>
+  <section id="totales">
+    <p>Total unidades: <span id="cantidad">0</span></p>
+    <p>Total precio: $<span id="precio">0</span></p>
+    <button disabled>Comprar</button>
+    <button id="reiniciar">Reiniciar</button>
+  </section>
+</main>
+<div id="monto" class="  " style=" width: 500PX; height: 500px; margin-left: 400px; margin-top: 3%; border: 2px solid black; padding: 15px; background-color: rgb(245, 227, 230); border-radius: 4PX;">
       <h4 class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;">INFORMACIÓN DE PAGO</h4>
       <H5 id="precio_p1"> <strong style="font-family: Georgia, 'Times New Roman', Times, serif;">Subtotal :</strong> S/. 90.00</H5>
       <div class="row col-12">
@@ -188,6 +98,12 @@
           <a href="<?php echo BASE_URL?>menu" class="btn btn-dark">Seguir Comprando</a>
       </div>
   </div>
+</div>
+        
+
+</div>
+    
+  
  
 
 
@@ -220,3 +136,4 @@
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+<script src="<?php echo BASE_URL; ?>views/js/cart.js" defer></script>

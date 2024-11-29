@@ -13,7 +13,7 @@
                 
                   
                 <li class="nav-item "  style="margin-left: 620px;">
-                  <a class=" cre nav-link active "  aria-current="page" href="<?php echo BASE_URL?>varones" style="font-weight: 800;">VARONES</a>
+                  <a class=" cre nav-link active "  aria-current="page" href="<?php echo BASE_URL?>varones" style="font-weight: 800; color:red; text-decoration:underline;">VARONES</a>
                   
                 </li>
                 <li class="nav-item" style="margin-left: 50px;">
@@ -21,7 +21,7 @@
                   
                 </li>
                 <li class="nav-item "  style="margin-left: 50px;">
-                  <a class="cre nav-link active "  aria-current="page" href="<?php echo BASE_URL?>mujeres" style="font-weight: bold;  color: red; text-decoration: underline;">MUJERES</a>
+                  <a class="cre nav-link active "  aria-current="page" href="<?php echo BASE_URL?>mujeres" style="font-weight: bold; ">MUJERES</a>
                   
                 </li>
                 
@@ -85,7 +85,7 @@
     
     <div class="col-lg-3 col-md-4 col-ms-6 p-11"  >
         <div class="card " style="min-height: auto;">
-        <img src="images/alphacool.png" class="card-img-top" alt="..."style="height: 400px; width: 470px">
+        <img src="images/2.png" class="card-img-top" alt="..."style="height: 400px; width: 470px">
         <div class="card-body">
           <h5 class="card-title">POLO POWER | ALPHA NEGRO</h5>
           <p class="card-text m-0">Material - ALPHACOOL
@@ -107,7 +107,7 @@
       </div>
       <div class="  col-lg-3 col-md-4 col-ms-6 p-11"  >
         <div class="card">
-        <img src="images/hombres044.png" class="card-img-top" alt="..." style="height: 400px; width: 440px">
+        <img src="images/1.png" class="card-img-top" alt="..." style="height: 400px; width: 440px">
         <div class="card-body">
           <h5 class="card-title">CARGO SHORT | GRIS | CON LICRAS</h5>
           <p class="card-text m-0">Bolsillo  cargo con cierre 
@@ -216,7 +216,7 @@
     
       <div class="col-lg-3 col-md-4 col-ms-6 p-11"  >
           <div class="card " style="min-height: auto;">
-          <img src="images/alphacool.png" class="card-img-top" alt="..."style="height: 400px; width: 470px">
+          <img src="images/2.png" class="card-img-top" alt="..."style="height: 400px; width: 470px">
           <div class="card-body">
             <h5 class="card-title">POLO POWER | ALPHA NEGRO</h5>
             <p class="card-text m-0">Material - ALPHACOOL
@@ -238,7 +238,7 @@
         </div>
         <div class="  col-lg-3 col-md-4 col-ms-6 p-11"  >
           <div class="card">
-          <img src="images/hombres044.png" class="card-img-top" alt="..." style="height: 400px; width: 440px">
+          <img src="images/1.png" class="card-img-top" alt="..." style="height: 400px; width: 440px">
           <div class="card-body">
             <h5 class="card-title">CARGO SHORT | GRIS | CON LICRAS</h5>
             <p class="card-text m-0">Bolsillo  cargo con cierre 
