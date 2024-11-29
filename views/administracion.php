@@ -48,6 +48,7 @@
          <img alt="Wheel with prizes" height="100" src="https://storage.googleapis.com/a1aa/image/0yqxfyyD6WzeUkUcgD8ho3Lp2q2xc3wusWgMYfaLpcPbA2hnA.jpg" width="100" style="display: block; margin: 0 auto;"/>
          <div class="card-body">
             <h5 class="card-title">Registrar Nuevo Producto</h5>
+            <a href="<?php echo BASE_URL?>productos" class="cre btn btn-danger m-20" style="width: 300px;">Ver Productos</a>
          </div>
       </a>
    </div>
@@ -56,6 +57,8 @@
          <img alt="Gift card icon" height="100" src="https://storage.googleapis.com/a1aa/image/IhINXTMJ8I5pHpeoDToM5HI3715IcVUjeSveD9tWGdRdA2hnA.jpg" width="100" style="display: block; margin: 0 auto;"/>
          <div class="card-body">
             <h5 class="card-title">Registrar Nueva Persona/Usuario</h5>
+            <a href="<?php echo BASE_URL?>personas" class="cre btn btn-danger m-20" style="width: 300px;">Ver Usuarios</a>
+
          </div>
       </a>
    </div>
@@ -64,6 +67,8 @@
          <img alt="Specialists circle icon" height="100" src="https://storage.googleapis.com/a1aa/image/LjJwLuyMWbZLFBrHdT0t8PH74wHWl7e3FfioU55YKaqLA7wTA.jpg" width="100" style="display: block; margin: 0 auto;"/>
          <div class="card-body">
             <h5 class="card-title">Registrar Nueva Categoría</h5>
+            <a href="<?php echo BASE_URL?>categorias" class="cre btn btn-danger m-20" style="width: 300px;">Ver Categorias</a>
+
          </div>
       </a>
    </div>
@@ -72,6 +77,8 @@
          <img alt="Mobile app icon" height="100" src="https://storage.googleapis.com/a1aa/image/WPpij15S04qeAaeN6Ix195ijszchVxMVRh4pdg93tAWMA7wTA.jpg" width="100" style="display: block; margin: 0 auto;"/>
          <div class="card-body">
             <h5 class="card-title">Registrar Nueva Compra/Venta</h5>
+            <a href="<?php echo BASE_URL?>compras" class="cre btn btn-danger m-20" style="width: 300px;">Ver Compras/ventas</a>
+
          </div>
       </a>
    </div>

@@ -19,10 +19,11 @@
                 </tr>
             </thead>
             <tbody id="tbl_persona">
-                
+            <a href="<?php echo BASE_URL?>administracion" class="cre btn btn-danger m-20" style="width: 300px;">Volver</a>
             </tbody>
         </table>
     </div>
+    
 </div>
 </body>
 <script src="<?php echo BASE_URL;?>views/js/functions_persona.js"></script>
