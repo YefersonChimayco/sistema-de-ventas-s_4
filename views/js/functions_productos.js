@@ -19,7 +19,7 @@ async function listar_productos(params) {
                 <td>${item.stock}</td>
                 <td>${item.categoria.nombre}</td>
                 <td>${item.id_proveedor}</td>
-                <td>${item.codigo}</td>
+                <td>${item.options}</td>
                 `;
                 document.querySelector('#tbl_producto').appendChild(nueva_fila);
             }); 
@@ -42,7 +42,7 @@ async function registrar_producto(){
     let stock = document.querySelector('#stock').value; // solo id
     let categoria = document.querySelector('#idcategoria').value;
     let imagen = document.querySelector('#imagen').value; // solo id
-    let proveedor = document.querySelector('#idproveedor').value;
+    let proveedor = document.querySelector('#proveedor').value;
     
     if (codigo=="" || nombre=="" || detalle=="" || precio==""|| stock==""|| categoria=="" || imagen=="" || proveedor=="") { // = para asignar valor == para preguntar que valor tiene
         alert("error, campos vacios");
@@ -89,22 +89,47 @@ async function listar_categorias(){
         console.log("error al cargar categorias"+ e);
     }
 }
-async function listar_proveedores(){
+async function listar_proveedores() {
     try {
-        let respuesta = await fetch(base_url+'controller/persona.php?tipo=listar_proveedor');
-        json = await respuesta.json();
+        // Envía la solicitud al controlador de proveedores
+        let respuesta = await fetch(base_url + 'controller/persona.php?tipo=listarproveedor');
+        let json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
+            let contenido_select = '<option value="">Seleccione Proveedor</option>';
             datos.forEach(element => {
-                $('#idpersona').append($('<option/>',{
-                    text: `${element.razon_social}`,
+                contenido_select += '<option value="' + element.id + '">' + element.razon_social + '</option>';
+                // O usando jQuery
+                /*$('#proveedor').append($('<option />', {
+                    text: `${element.nombre}`,
                     value: `${element.id}`
-                }));
-            }); 
-            
+                }));*/
+            });
+            document.getElementById('proveedor').innerHTML = contenido_select;
         }
         console.log(respuesta);
     } catch (e) {
-        console.log("error al cargar proveedores"+ e);
+        console.error("Error al cargar proveedores: " + e);
+    }
+}
+async function ver_producto(id) {
+     const formData = new FormData();
+     formData.append('id_producto',id);
+    try {
+        let respuesta = await fetch(base_url+'controller/Producto.php?tipo=ver', {
+            method: 'POST',
+            mode : 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if (json.status) {
+              
+        } else {
+            window.location=base_url+"productos";
+        }
+        console.log(json);  
+    } catch (error) {
+        console.log("ups estas fallando mano"+error);
     }
 }

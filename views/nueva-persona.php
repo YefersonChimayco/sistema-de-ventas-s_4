@@ -40,14 +40,7 @@
         <label for=""> rol:</label>
             <input type="text" class="form-control" required id="rol" name="rol" >
     </div>
-    <div>
-        <label for=""> password:</label>
-            <input type="text" class="form-control" required id="password" name="password" >
-    </div>
-    <div>
-        <label for=""> estado:</label>
-            <input type="text" class="form-control" required id="estado" name="estado" >
-    </div>
+   
     <div>
         <label for=""> fecha_reg:</label>
             <input type="date" class="form-control" required id="fecha_reg" name="fecha_reg" >

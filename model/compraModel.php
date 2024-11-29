@@ -23,4 +23,16 @@ class compraModel
         }
         return $arrRespuesta;
     }
+    public function obtener_trabajador()
+    {
+        $arrRespuesta = array();
+        // Consulta a la tabla persona para obtener los proveedores
+        $respuesta = $this->conexion->query("SELECT * FROM persona WHERE rol = 'trabajador'");
+        
+        while ($objeto = $respuesta->fetch_object()) {
+            array_push($arrRespuesta, $objeto);
+        }
+        
+        return $arrRespuesta;
+    }
 }
