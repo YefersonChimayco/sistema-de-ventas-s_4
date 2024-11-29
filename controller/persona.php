@@ -62,7 +62,8 @@ if ($tipo=="listarproveedor") {
             $id_persona = $arr_Persona[$i]->razon_social;
             $persona = $arr_Persona[$i]->id; 
             $opciones='
-            <a href=" class ="btn btn-success"><i class="fa fa-pencil"></i> </a>
+            <a href="'.BASE_URL.'editar_producto/'.$id_producto.'" class="btn btn-warnig"> editar </a>
+            <button onclick="eliminar_producto('.$id_producto.');"> eliminar </button>
             ';
             $arr_Persona[$i]->options= $opciones;
         }
