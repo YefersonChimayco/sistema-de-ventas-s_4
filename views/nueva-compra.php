@@ -2,7 +2,7 @@
 <form action="" id="formCompra">
     <div>
         <label for=""> id del producto: </label>
-            <input type="number"  class="form-control" required id="id_producto" name="id_producto" >
+            <input type="number"  class="form-control" required id="id_producto" name="id_producto"  placeholder="">
     </div>
     <div>
         <label for=""> cantidad: </label>
