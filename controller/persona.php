@@ -63,8 +63,8 @@ if ($tipo=="listarproveedor") {
             $id_persona = $arr_Persona[$i]->razon_social;
             $persona = $arr_Persona[$i]->id; 
             $opciones='
-               <a href="'.BASE_URL.'editar_persona/'.$id_persona.'" class="btn btn-warnig"> editar </a>
-            <button onclick="eliminar_persona('.$id_persona.');"> eliminar </button>
+               <a href="'.BASE_URL.'editar-persona/'.$id_persona.'" class="btn btn-warnig"> editar </a>
+            <button onclick="eliminar-persona('.$id_persona.');"> eliminar </button>
             ';
             $arr_Persona[$i]->options= $opciones;
         }
@@ -73,3 +73,14 @@ if ($tipo=="listarproveedor") {
     }
     echo json_encode($arr_Respuesta);
 } 
+if ($tipo=="ver") {
+    /*  print_r($_POST); */
+     $id_producto = $_POST['id_persona'];
+     $arr_Respuesta = $objProducto->verPersona($id_persona);
+     if (empty($arr_Respuesta)) {
+         $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
+     } else {
+         $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
+     }
+     
+ }

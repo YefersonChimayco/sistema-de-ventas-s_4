@@ -20,7 +20,7 @@ if ($tipo=="listar") {
             $id_producto = $arr_Productos[$i]->id; 
             //localhost /editarproducto/4
             $opciones='
-            <a href="'.BASE_URL.'editar_producto/'.$id_producto.'" class="btn btn-warnig"> editar </a>
+            <a href="'.BASE_URL.'editar-producto/'.$id_producto.'" class="btn btn-warnig"> editar </a>
             <button onclick="eliminar_producto('.$id_producto.');"> eliminar </button>
             ';
             $arr_Productos[$i]->options= $opciones;
@@ -47,7 +47,7 @@ if ($tipo=="registrar") {
         $arr_Respuesta = array('status'=> false, 'mensaje'=>'error campos vacios');
     }else {
         $archivo = $_FILES['imagen']['tmp_name'];
-        $destino = './assets/img_productos/';
+        $destino = '../assets/img_productos/';
         $tipoArchivo = strtolower(pathinfo($_FILES["imagen"]["name"],PATHINFO_EXTENSION));
 
 
@@ -74,14 +74,13 @@ if ($tipo=="ver") {
     $arr_Respuesta = $objProducto->verProducto($id_producto);
     if (empty($arr_Respuesta)) {
         $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
-
     } else {
         $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
     }
     
 }
 if ($tipo=="actualizar") {
-    print_r($_POST);
+    print_r($_POST['']);
 }
 if ($tipo=="eliminar") {
     print_r($_POST);

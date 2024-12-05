@@ -76,4 +76,12 @@ async function listar_persona(params) {
 if (document.querySelector('#tbl_persona')){
     listar_persona();
 }
+async function actualizar_producto() {
+    const datos = new FormData(frmProducto);
+    try {
+        let respuesta = await fetch(base_url+'controller/persona.php?tipo=listar')
+    } catch (error) {
+        
+    }
+}
 

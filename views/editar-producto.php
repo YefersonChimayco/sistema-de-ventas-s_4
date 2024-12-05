@@ -1,8 +1,9 @@
 <div class="container form-nproduct " >
-<form action="" id="Producto">
+<form action="" id="frmProducto">
+    <input type="hidden" name="id_producto" id ="id_producto">
     <div>
         <label for=""> codigo: </label>
-            <input type="text"  class="form-control" required id="codigo" name="codigo" >
+            <input type="text"  class="form-control"  id="codigo" name="codigo" readonly  >
     </div>
     <div>
         <label for=""> nombre: </label>
@@ -52,5 +53,5 @@
 <script >
 //http://localhost/sistema-de-ventas-s_4/editar_producto/3
 const id_p = <?php $pagina=explode("/",string: $_GET['views']); echo $pagina['1'];   ?>;
-ver_producto(id_p);
+verProducto(id_p);
 </script>
