@@ -43,8 +43,8 @@ if ($tipo == "listar") {
             // Asignar opciones correctamente formateadas
           
             $opciones = '
-            <a href="'.BASE_URL.'editar_producto/'.$id_producto.'" class="btn btn-warnig"> editar </a>
-            <button onclick="eliminar_producto('.$id_producto.');"> eliminar </button>
+            <a href="'.BASE_URL.'editar_compra/'.'" class="btn btn-warnig"> editar </a>
+            <button onclick="eliminar_compra('.');"> eliminar </button>
             ';
             // Agregar las opciones al objeto actual
             $arr_Compra[$i]->options = $opciones;
@@ -58,7 +58,7 @@ if ($tipo == "listar") {
     // Devolver la respuesta como JSON
     echo json_encode($arr_Respuesta);
 }
-if ($tipo=="listartrabajador") {
+/* if ($tipo=="listartrabajador") {
     $arr_Respuesta = array('status'=> false, 'contenido'=>'');
     $arr_Trabajador = $objPersona-> obtener_trabajador();
     if (!empty($arr_Proveedor)) {// recorremos el array pra agregar la opciones de las categorias
@@ -73,6 +73,6 @@ if ($tipo=="listartrabajador") {
     }
     echo json_encode($arr_Respuesta);
 }
-
+ */
 
 ?>

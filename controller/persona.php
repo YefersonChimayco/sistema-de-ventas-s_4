@@ -29,8 +29,8 @@ if ($tipo=="registrar") {
         $arrPersona= $objPersona->registrarPersona($nro_identidad, $razon_social, $telefono,$correo, $departamento, $provincia, $distrito, $cod_postal, $direccion, $rol, $secure_password, $fecha_reg);
         if ($arrPersona-> id > 0) {
             $arr_Respuesta = array('status' => true, 'mensaje' =>'registro exitoso');
-            //cargar archivos
-           
+            //car}gar archivos
+        
         } else {
             $arr_Respuesta = array('status' => false, 'mensaje'=>'error al SREGISTRAR persona');
         }
@@ -44,7 +44,8 @@ if ($tipo=="listarproveedor") {
         for ($i=0; $i <count($arr_Proveedor) ; $i++) { 
             $id_Proveedor = $arr_Proveedor[$i]->id;
             $razon_social = $arr_Proveedor[$i]->razon_social; 
-            $opciones='<a href="" class="btn btn-success"><i class="fa fa-pencil"> Editar</i></a> <a href="" class="btn btn-danger"><i class="fa fa-trash"> Eliminar</i></a>';
+            $opciones='
+            ';
             $arr_Proveedor[$i]->options= $opciones;
         }
         $arr_Respuesta['status']= true;
@@ -62,8 +63,8 @@ if ($tipo=="listarproveedor") {
             $id_persona = $arr_Persona[$i]->razon_social;
             $persona = $arr_Persona[$i]->id; 
             $opciones='
-            <a href="'.BASE_URL.'editar_producto/'.$id_producto.'" class="btn btn-warnig"> editar </a>
-            <button onclick="eliminar_producto('.$id_producto.');"> eliminar </button>
+               <a href="'.BASE_URL.'editar_persona/'.$id_persona.'" class="btn btn-warnig"> editar </a>
+            <button onclick="eliminar_persona('.$id_persona.');"> eliminar </button>
             ';
             $arr_Persona[$i]->options= $opciones;
         }

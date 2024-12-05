@@ -9,7 +9,7 @@
                     <th>Cantidad</th>
                     <th>Precio</th>
                     <th>id del Trabajador</th>
-          
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody id="tbl_compra">

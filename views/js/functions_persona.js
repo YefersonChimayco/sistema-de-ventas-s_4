@@ -62,8 +62,8 @@ async function listar_persona(params) {
                 <td>${item.cod_postal}</td>
                 <td>${item.rol}</td>
                 <td>${item.password}</td>
-                <td>${item.estado}</td>
                 <td>${item.fecha_reg}</td>
+                <td>${item.options}</td>
                 `;
                 document.querySelector('#tbl_persona').appendChild(nueva_fila);
             }); 

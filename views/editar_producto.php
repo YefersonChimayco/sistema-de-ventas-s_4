@@ -50,7 +50,7 @@
 <script >listar_categorias();</script>
 <script >listar_proveedores();</script>
 <script >
-//http://localhost/sistema-de-ventas-s_4/editar_producto/4
-const id_p=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1']   ?>
+//http://localhost/sistema-de-ventas-s_4/editar_producto/3
+const id_p = <?php $pagina=explode("/",string: $_GET['views']); echo $pagina['1'];   ?>;
 ver_producto(id_p);
 </script>

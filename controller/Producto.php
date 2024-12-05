@@ -59,7 +59,7 @@ if ($tipo=="registrar") {
             //cargar imagene
             if (move_uploaded_file($archivo, $destino . '' . $nombre)) {
             } else {
-                $arr_Respuesta = array('status' => true, 'mensaje' => 'Registro Exitoso, error al subir imagen');
+                $arr_Respuesta = array('status' => true, 'mensaje' =>'registro exitoso');
             }
         } else {
             $arr_Respuesta = array('status' => false, 'mensaje'=>'error al SUBIR producto');

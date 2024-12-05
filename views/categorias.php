@@ -6,6 +6,7 @@
                     <th>Nro</th>
                     <th>Nombre</th>
                     <th>Detalle</th>
+                    <th>aciones</th>
                  
                 </tr>
             </thead>

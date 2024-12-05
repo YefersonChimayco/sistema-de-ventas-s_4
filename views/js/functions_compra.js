@@ -49,7 +49,7 @@ async function listar_compra(params) {
                 <td>${item.cantidad}</td>
                 <td>${item.precio}</td>
                 <td>${item.id_trabajador}</td>
-                
+                <td>${item.options}</td>
                 `;
                 document.querySelector('#tbl_compra').appendChild(nueva_fila);
             }); 
