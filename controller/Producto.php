@@ -80,7 +80,7 @@ if ($tipo=="ver") {
     echo json_encode($response);
 }
 if ($tipo=="actualizar") {
-<<<<<<< HEAD
+
       $id_producto = $_POST['id_producto'];
     $img = $_POST['img'];
     $nombre = $_POST['nombre'];
@@ -111,9 +111,7 @@ if ($tipo=="actualizar") {
         }
     }
     echo json_encode($arr_Respuesta);
-=======
     print_r($_POST['']);
->>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
 }
 if ($tipo=="eliminar") {
     print_r($_POST);

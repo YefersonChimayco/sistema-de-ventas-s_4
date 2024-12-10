@@ -43,13 +43,10 @@ if ($tipo =="listar") {
             // Asignar opciones correctamente formateadas
           
             $opciones = '
-<<<<<<< HEAD
             <a href="'.BASE_URL.'editar_compra/'.$id_compra.'" class="btn btn-warnig"> editar </a>
             <button onclick="eliminar_compra('.$id_compra.');"> eliminar </button>
-=======
             <a href="'.BASE_URL.'editar_compra/'.'" class="btn btn-warnig"> editar </a>
             <button onclick="eliminar_compra('.');"> eliminar </button>
->>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
             ';
             // Agregar las opciones al objeto actual
             $arr_Compra[$i]->options = $opciones;

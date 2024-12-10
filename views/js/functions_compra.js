@@ -49,12 +49,9 @@ async function listar_compra(params) {
                 <td>${item.cantidad}</td>
                 <td>${item.precio}</td>
                 <td>${item.id_trabajador}</td>
-<<<<<<< HEAD
                  <td>${item.options}</td>
                 
-=======
                 <td>${item.options}</td>
->>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
                 `;
                 document.querySelector('#tbl_compra').appendChild(nueva_fila);
             }); 

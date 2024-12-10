@@ -15,11 +15,8 @@
                     <th>Rol</th>
                     <th>Password</th>
                     <th>Fecha_Reg</th>
-<<<<<<< HEAD
                     <th>Accion</th>
-=======
-                    <th>Acciones</th>
->>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
+                   
                 </tr>
             </thead>
             <tbody id="tbl_persona">

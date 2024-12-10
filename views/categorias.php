@@ -6,11 +6,8 @@
                     <th>Nro</th>
                     <th>Nombre</th>
                     <th>Detalle</th>
-<<<<<<< HEAD
                     <th>Accion</th>
-=======
-                    <th>aciones</th>
->>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
+                    
                  
                 </tr>
             </thead>

@@ -63,13 +63,10 @@ if ($tipo=="listarproveedor") {
             $id_persona = $arr_Persona[$i]->razon_social;
             $persona = $arr_Persona[$i]->id; 
             $opciones='
-<<<<<<< HEAD
             <a href="'.BASE_URL.'editar-persona/'.$id_persona.'" class="btn btn-warnig"> editar </a>
             <button onclick="eliminar_persona('.$id_persona.');"> eliminar </button>
-=======
                <a href="'.BASE_URL.'editar-persona/'.$id_persona.'" class="btn btn-warnig"> editar </a>
             <button onclick="eliminar-persona('.$id_persona.');"> eliminar </button>
->>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
             ';
             $arr_Persona[$i]->options= $opciones;
         }
@@ -80,7 +77,6 @@ if ($tipo=="listarproveedor") {
 } 
 if ($tipo=="ver") {
     /*  print_r($_POST); */
-<<<<<<< HEAD
      $id_persona = $_POST['id_persona'];
      $arr_Respuesta = $objPersona->verPersona($id_persona);
      if (empty($arr_Respuesta)) {
@@ -126,7 +122,6 @@ if ($tipo=="ver") {
          }
      }
      echo json_encode($arr_Respuesta);
-=======
      $id_producto = $_POST['id_persona'];
      $arr_Respuesta = $objProducto->verPersona($id_persona);
      if (empty($arr_Respuesta)) {
@@ -135,5 +130,4 @@ if ($tipo=="ver") {
          $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
      }
      
->>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
  }
