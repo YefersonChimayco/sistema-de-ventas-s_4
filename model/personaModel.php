@@ -53,4 +53,10 @@ class personaModel
         $sql = $sql->fetch_object();
         return $sql;
     }
+    public function eliminarPersona($id){
+        $sql = $this->conexion->query("CALL eliminarpersona('{$id}')");
+        $sql =$sql->fetch_object(); 
+        return $sql;
+        
+    }
 }

@@ -65,8 +65,7 @@ if ($tipo=="listarproveedor") {
             $opciones='
             <a href="'.BASE_URL.'editar-persona/'.$id_persona.'" class="btn btn-warnig"> editar </a>
             <button onclick="eliminar_persona('.$id_persona.');"> eliminar </button>
-               <a href="'.BASE_URL.'editar-persona/'.$id_persona.'" class="btn btn-warnig"> editar </a>
-            <button onclick="eliminar-persona('.$id_persona.');"> eliminar </button>
+            
             ';
             $arr_Persona[$i]->options= $opciones;
         }
@@ -131,3 +130,13 @@ if ($tipo=="ver") {
      }
      
  }
+ if ($tipo=="eliminar") {
+    $id_persona = $_POST['id_persona'];
+    $arr_Respuesta = $objPersona->eliminarPersona($id_persona);
+    if (empty($arr_Respuesta)) {
+        $response = array ('status' => false);
+    } else {
+        $response = array ('status' => true);
+    }
+    echo json_encode($response);
+}

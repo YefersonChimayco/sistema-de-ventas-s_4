@@ -92,7 +92,7 @@ if ($tipo=="actualizar") {
         //repuesta
         $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
     } else {
-        $arrProducto = $objProducto->actualizarProducto($id_producto, $codigo, $nombre, $detalle,$precio, $stock, $idcategoria, $imagen, $idproveedor );
+        $arrProducto = $objProducto->actualizarProducto($id_producto, $codigo, $nombre, $detalle,$precio, $stock, $idcategoria, $imagen, $proveedor );
         if ($arrProducto->p_id > 0) {
             $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
 
@@ -114,7 +114,14 @@ if ($tipo=="actualizar") {
     print_r($_POST['']);
 }
 if ($tipo=="eliminar") {
-    print_r($_POST);
+    $id_producto = $_POST['id_producto'];
+    $arr_Respuesta = $objProducto->eliminarProducto($id_producto);
+    if (empty($arr_Respuesta)) {
+        $response = array ('status' => false);
+    } else {
+        $response = array ('status' => true);
+    }
+    echo json_encode($response);
 }
 
 

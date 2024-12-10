@@ -131,3 +131,40 @@ async function actualizar_producto() {
     }
 }
 }
+async function eliminar_persona(id) {
+    swal({
+        title:"¿Realmente desea elminar la persona ?",
+        icon:"warning",
+        buttons:true,
+        dangerMode:true
+    }).then((willDelete)=>{
+        if (willDelete) {
+            fnt_eliminar(id);
+        }
+    })
+    
+}
+async function fnt_eliminar(id) {
+   /*  alert("producto eliminado: id="+ id); */
+   const formdata = new FormData();
+   formdata.append('id_persona', id);
+   try {
+    let respuesta = await fetch(base_url + 'controller/persona.php?tipo=eliminar',{
+        method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formdata
+    });
+    json= await respuesta.json();
+    if (json.status) {
+        /* alert("eliminado correctamente"); */
+        swal("Eliminar", "eliminado correctamente","success");
+        document.querySelector('#fila'+id).remove();
+    }else{
+        swal("Eliminar", "error al elimninar producto","warning");
+
+    }
+   } catch (e) {
+    console.log("ocurrio un errro"+e);
+   }
+}
