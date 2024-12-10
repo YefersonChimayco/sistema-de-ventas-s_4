@@ -47,7 +47,7 @@ if ($tipo=="registrar") {
         $arr_Respuesta = array('status'=> false, 'mensaje'=>'error campos vacios');
     }else {
         $archivo = $_FILES['imagen']['tmp_name'];
-        $destino = './assets/img_productos/';
+        $destino = '../assets/img_productos/';
         $tipoArchivo = strtolower(pathinfo($_FILES["imagen"]["name"],PATHINFO_EXTENSION));
 
 
@@ -59,7 +59,7 @@ if ($tipo=="registrar") {
             //cargar imagene
             if (move_uploaded_file($archivo, $destino . '' . $nombre)) {
             } else {
-                $arr_Respuesta = array('status' => true, 'mensaje' => 'Registro Exitoso, error al subir imagen');
+                $arr_Respuesta = array('status' => true, 'mensaje' =>'registro exitoso');
             }
         } else {
             $arr_Respuesta = array('status' => false, 'mensaje'=>'error al SUBIR producto');
@@ -74,13 +74,13 @@ if ($tipo=="ver") {
     $arr_Respuesta = $objProducto->verProducto($id_producto);
     if (empty($arr_Respuesta)) {
         $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
-
     } else {
         $response = array ('status' => false, 'mensaje' =>"Datos encontrados", 'contenido' =>$arr_Respuesta);
     }
     echo json_encode($response);
 }
 if ($tipo=="actualizar") {
+<<<<<<< HEAD
       $id_producto = $_POST['id_producto'];
     $img = $_POST['img'];
     $nombre = $_POST['nombre'];
@@ -111,6 +111,9 @@ if ($tipo=="actualizar") {
         }
     }
     echo json_encode($arr_Respuesta);
+=======
+    print_r($_POST['']);
+>>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
 }
 if ($tipo=="eliminar") {
     print_r($_POST);

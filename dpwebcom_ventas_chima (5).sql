@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-10-2024 a las 16:07:25
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Tiempo de generación: 28-11-2024 a las 14:51:08
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `sistema_ventas`
+-- Base de datos: `dpwebcom_ventas_chima`
 --
 
 DELIMITER $$
@@ -191,9 +191,9 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `insertcompras` (IN `p_id_producto` 
     SET existe_compras = (SELECT COUNT(*) FROM compras WHERE id_producto=p_id_producto);
     
     IF existe_compras=0 THEN
-    	INSERT INTO compras (id_producto,cantidad,precio,stock,id_trabajador)
+    	INSERT INTO compras (id_producto,cantidad,precio,id_trabajador)
         	VALUES 
-(p_id_producto,p_cantidad,p_detalle,p_precio,p_id_trabajador);
+(p_id_producto,p_cantidad,p_precio,p_id_trabajador);
            SET id = LAST_INSERT_ID();
     ELSE
            SET id=0;
@@ -233,15 +233,15 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `insertpagos` (IN `p_id_venta` INT(1
     SELECT id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `insertpersona` (IN `p_nro_identidad` VARCHAR(11), IN `p_razon_sacial` VARCHAR(130), IN `p_telefono` VARCHAR(15), IN `p_correo` VARCHAR(100), IN `p_departamento` VARCHAR(20), IN `p_provincia` VARCHAR(30), IN `p_distrito` VARCHAR(50), IN `p_cod_postal` INT(5), IN `p_direccion` VARCHAR(100), IN `p_rol` VARCHAR(15), IN `p_password` VARCHAR(500), IN `p_estado` VARCHAR(1), IN `p_fecha_reg` DATETIME)   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertpersona` (IN `p_nro_identidad` VARCHAR(11), IN `p_razon_social` VARCHAR(130), IN `p_telefono` VARCHAR(15), IN `p_correo` VARCHAR(100), IN `p_departamento` VARCHAR(20), IN `p_provincia` VARCHAR(30), IN `p_distrito` VARCHAR(50), IN `p_cod_postal` INT(5), IN `p_direccion` VARCHAR(100), IN `p_rol` VARCHAR(15), IN `p_password` VARCHAR(500), IN `p_estado` VARCHAR(1), IN `p_fecha_reg` DATETIME)   BEGIN
 	DECLARE existe_persona INT;
     DECLARE id INT;
     SET existe_persona = (SELECT COUNT(*) FROM persona WHERE nro_identidad=p_nro_identidad);
     
     IF existe_persona=0 THEN
-    	INSERT INTO persona (nro_identidad,razon_sacial,telefono,correo,departamento,provincia,distrito,cod_postal,direccion,rol,password,estado,fecha_reg)
+    	INSERT INTO persona (nro_identidad,razon_social,telefono,correo,departamento,provincia,distrito,cod_postal,direccion,rol,password,estado,fecha_reg)
         	VALUES 
-(p_nro_identidad,p_razon_sacial,p_telefono,p_correo,p_departamento,p_provincia,p_distrito,p_cod_postal,p_direccion,p_cod_postal,p_direccion,p_rol,p_password,p_estado,p_fecha_reg);
+(p_nro_identidad,p_razon_social,p_telefono,p_correo,p_departamento,p_provincia,p_distrito,p_cod_postal,p_direccion,p_rol,p_password,p_estado,p_fecha_reg);
            SET id = LAST_INSERT_ID();
     ELSE
            SET id=0;
@@ -251,17 +251,19 @@ END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `insertproducto` (IN `p_codigo` INT(20), IN `p_nombre` VARCHAR(30), IN `p_detalle` VARCHAR(100), IN `p_precio` DECIMAL(6,2), IN `p_stock` INT(5), IN `p_id_categoria` INT(11), IN `p_imagen` VARCHAR(100), IN `p_id_proveedor` INT(11))   BEGIN
 	DECLARE existe_producto INT;
-    DECLARE id INT;
+   DECLARE id_n INT;
     SET existe_producto = (SELECT COUNT(*) FROM producto WHERE codigo=p_codigo);
     
     IF existe_producto=0 THEN
     	INSERT INTO producto (codigo,nombre,detalle,precio,stock,id_categoria,imagen,id_proveedor)
         	VALUES 
 (p_codigo,p_nombre,p_detalle,p_precio,p_stock,p_id_categoria,p_imagen,p_id_proveedor);
-           SET id = LAST_INSERT_ID();
+         SET id_n = LAST_INSERT_ID();
+         UPDATE producto SET imagen=CONCAT(id_n,'.',tipo_archivo) WHERE id=id_n;
     ELSE
-           SET id=0;
+           SET id_n=0;
     END IF;
+    SELECT id_n;
     SELECT id;
 END$$
 
@@ -316,7 +318,9 @@ CREATE TABLE `categoria` (
 --
 
 INSERT INTO `categoria` (`id`, `nombre`, `detalle`) VALUES
-(1, 'polos', 'polos para adultos');
+(1, 'polos', 'polos para adultos'),
+(2, 'pantalones', 'pantalones'),
+(3, 'hola', 'hola');
 
 -- --------------------------------------------------------
 
@@ -331,6 +335,15 @@ CREATE TABLE `compras` (
   `precio` decimal(6,2) DEFAULT NULL,
   `id_trabajador` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `compras`
+--
+
+INSERT INTO `compras` (`id`, `id_producto`, `cantidad`, `precio`, `id_trabajador`) VALUES
+(1, 1, 1, 1.00, 1),
+(2, 2, 2, 2.00, 2),
+(3, 3, 3, 3.00, 3);
 
 -- --------------------------------------------------------
 
@@ -368,19 +381,19 @@ CREATE TABLE `pagos` (
 
 CREATE TABLE `persona` (
   `id` int(11) NOT NULL,
-  `nro_identidad` varchar(11) DEFAULT NULL,
-  `razon_social` varchar(130) DEFAULT NULL,
-  `telefono` varchar(15) DEFAULT NULL,
-  `correo` varchar(100) DEFAULT NULL,
-  `departamento` varchar(20) DEFAULT NULL,
-  `provincia` varchar(30) DEFAULT NULL,
-  `distrito` varchar(50) DEFAULT NULL,
-  `cod_postal` int(5) DEFAULT NULL,
-  `direccion` varchar(100) DEFAULT NULL,
-  `rol` varchar(15) DEFAULT NULL,
-  `password` varchar(500) DEFAULT NULL,
-  `estado` varchar(1) DEFAULT NULL,
-  `fecha_reg` datetime DEFAULT NULL
+  `nro_identidad` varchar(11) NOT NULL,
+  `razon_social` varchar(130) NOT NULL,
+  `telefono` varchar(15) NOT NULL,
+  `correo` varchar(100) NOT NULL,
+  `departamento` varchar(20) NOT NULL,
+  `provincia` varchar(30) NOT NULL,
+  `distrito` varchar(50) NOT NULL,
+  `cod_postal` int(5) NOT NULL,
+  `direccion` varchar(100) NOT NULL,
+  `rol` varchar(15) NOT NULL,
+  `password` varchar(500) NOT NULL,
+  `estado` int(1) NOT NULL DEFAULT 1,
+  `fecha_reg` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -388,7 +401,12 @@ CREATE TABLE `persona` (
 --
 
 INSERT INTO `persona` (`id`, `nro_identidad`, `razon_social`, `telefono`, `correo`, `departamento`, `provincia`, `distrito`, `cod_postal`, `direccion`, `rol`, `password`, `estado`, `fecha_reg`) VALUES
-(1, '45698321', 'jhonatan cesar ñaupai farfan', '900654123', 'jhonatan@gmail.com', 'ayacucho', 'huanta', 'huanta', 123456, 'jr racaredo alvarado', 'proveedor', '123456789', '1', '2024-12-12 00:00:00');
+(1, '45698321', 'jhonatan cesar ñaupai farfan', '900654123', 'jhonatan@gmail.com', 'ayacucho', 'huanta', 'huanta', 123456, 'jr racaredo alvarado', 'proveedor', '123456789', 1, '2024-12-12 00:00:00'),
+(2, '98465463', 'catalino', '98654321', 'asdasdjas@gmail.com', 'ayacucho', 'huanta', 'huanta', 5121, '2 de junio', 'administrador', '123', 1, '2024-11-27 10:54:37'),
+(3, '84894561', 'yeferson', '987654321', 'chima@gmail.com', 'ayacucho', 'huanta', 'huanta', 5121, 'golazo', 'proveedor', '213123', 1, '2024-11-27 10:54:37'),
+(4, '1', '1', '1', '1', '1', '1', '1', 1, '1', '1', '1', 1, '2024-11-14 00:00:00'),
+(5, '5', '5', '5', '5', '5', '5', '5', 5, '5', '5', '$2y$10$TTyr3cGRMY/HaMph16NAMu1TeqipCrwu7Orq1ZJkm/fIGc2lMv.m6', 5, '2024-11-14 00:00:00'),
+(6, '12121', 'asdasd', '21212', 'sdada', 'asd', 'asdasd', 'asdasd', 1212, 'sadasd', 'adminstrador', '$2y$10$gWWOwpkRLbLFvDGES67Zk.XwWsXNjKzEbS7gjpauS.gJscDrvAeM6', 1, '2024-11-28 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -415,7 +433,13 @@ CREATE TABLE `producto` (
 INSERT INTO `producto` (`id`, `codigo`, `nombre`, `detalle`, `precio`, `stock`, `id_categoria`, `imagen`, `id_proveedor`) VALUES
 (1, '123456', 'polo', 'polo amarrillo', 60.99, 100, 1, 'polo.jpg', 1),
 (2, '1', 'jh', '111', 1.00, 1, 1, '1', 1),
-(3, '12222', 'jh', '111', 1.00, 1, 1, '1', 1);
+(3, '12222', 'jh', '111', 1.00, 1, 1, '1', 1),
+(5, '212', 'dadsad', 'dasdasd', 12.00, 1, 1, '1', 1),
+(6, '1111', '1', '1', 1.00, 1, 1, '1', 1),
+(7, '1321312', 'boxer', 'boxer de sppiderman', 80.22, 10, 1, 'xd', 3),
+(8, '0', 'qwe', 'qwe', 121.00, 12, 1, 'Array', 3),
+(9, '15', 'SS', 'SSS', 121.00, 12, 1, 'imagen', 3),
+(10, '6', '6', '6', 6.00, 6, 1, 'imagen', 3);
 
 -- --------------------------------------------------------
 
@@ -517,13 +541,13 @@ ALTER TABLE `venta`
 -- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `compras`
 --
 ALTER TABLE `compras`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `detalle_venta`
@@ -541,13 +565,13 @@ ALTER TABLE `pagos`
 -- AUTO_INCREMENT de la tabla `persona`
 --
 ALTER TABLE `persona`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `sesiones`

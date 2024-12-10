@@ -29,8 +29,8 @@ if ($tipo=="registrar") {
         $arrPersona= $objPersona->registrarPersona($nro_identidad, $razon_social, $telefono,$correo, $departamento, $provincia, $distrito, $cod_postal, $direccion, $rol, $secure_password, $fecha_reg);
         if ($arrPersona-> id > 0) {
             $arr_Respuesta = array('status' => true, 'mensaje' =>'registro exitoso');
-            //cargar archivos
-           
+            //car}gar archivos
+        
         } else {
             $arr_Respuesta = array('status' => false, 'mensaje'=>'error al SREGISTRAR persona');
         }
@@ -44,7 +44,8 @@ if ($tipo=="listarproveedor") {
         for ($i=0; $i <count($arr_Proveedor) ; $i++) { 
             $id_Proveedor = $arr_Proveedor[$i]->id;
             $razon_social = $arr_Proveedor[$i]->razon_social; 
-            $opciones='<a href="" class="btn btn-success"><i class="fa fa-pencil"> Editar</i></a> <a href="" class="btn btn-danger"><i class="fa fa-trash"> Eliminar</i></a>';
+            $opciones='
+            ';
             $arr_Proveedor[$i]->options= $opciones;
         }
         $arr_Respuesta['status']= true;
@@ -62,8 +63,13 @@ if ($tipo=="listarproveedor") {
             $id_persona = $arr_Persona[$i]->razon_social;
             $persona = $arr_Persona[$i]->id; 
             $opciones='
+<<<<<<< HEAD
             <a href="'.BASE_URL.'editar-persona/'.$id_persona.'" class="btn btn-warnig"> editar </a>
             <button onclick="eliminar_persona('.$id_persona.');"> eliminar </button>
+=======
+               <a href="'.BASE_URL.'editar-persona/'.$id_persona.'" class="btn btn-warnig"> editar </a>
+            <button onclick="eliminar-persona('.$id_persona.');"> eliminar </button>
+>>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
             ';
             $arr_Persona[$i]->options= $opciones;
         }
@@ -74,6 +80,7 @@ if ($tipo=="listarproveedor") {
 } 
 if ($tipo=="ver") {
     /*  print_r($_POST); */
+<<<<<<< HEAD
      $id_persona = $_POST['id_persona'];
      $arr_Respuesta = $objPersona->verPersona($id_persona);
      if (empty($arr_Respuesta)) {
@@ -119,4 +126,14 @@ if ($tipo=="ver") {
          }
      }
      echo json_encode($arr_Respuesta);
+=======
+     $id_producto = $_POST['id_persona'];
+     $arr_Respuesta = $objProducto->verPersona($id_persona);
+     if (empty($arr_Respuesta)) {
+         $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
+     } else {
+         $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
+     }
+     
+>>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
  }

@@ -69,7 +69,11 @@
     </div>
     <div>
         <label for=""> distrito: </label>
+<<<<<<< HEAD
             <input type="text" class="form-control"  required id="distrito" name="distrito">
+=======
+            <input type="text" class="form-control"s  required id="distrito" name="distrito">
+>>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
             
     <div>
         <label for="">cod_postal:</label>
@@ -90,7 +94,11 @@
     </div>
 
     <br>
+<<<<<<< HEAD
     <button type="button"   class="btn btn-success"  onclick="actualizar_persona();">Actualizar</button>
+=======
+    <button type="button"   class="btn btn-success"  onclick="registrar_persona();">registrar</button>
+>>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
     </div>
     </div>
     <div class="text-center">
@@ -98,9 +106,20 @@
 </div>
 </form>
 </div>
+<<<<<<< HEAD
 <script src="<?php echo BASE_URL;?>views/js/functions_persona.js"></script>
 <script >
 //http://localhost/sistema-de-ventas-s_4/editar_producto/4
 const id_p=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1'];  ?>;
 verPersona(id_p);
 </script>
+=======
+
+
+<script src="<?php echo BASE_URL;?>views/js/functions_persona.js"></script>
+<script >
+//http://localhost/sistema-de-ventas-s_4/editar_producto/3
+const id_p = <?php $pagina=explode("/",string: $_GET['views']); echo $pagina['1'];   ?>;
+verPersona(id_p);
+</script>
+>>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
