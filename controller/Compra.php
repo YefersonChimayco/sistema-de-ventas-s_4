@@ -30,7 +30,7 @@ if ($tipo=="registrar") {
     } 
 
 }
-if ($tipo == "listar") {
+if ($tipo =="listar") {
     $arr_Respuesta = array('status' => false, 'contenido' => '');
 
     // Obtiene las compras
@@ -43,8 +43,8 @@ if ($tipo == "listar") {
             // Asignar opciones correctamente formateadas
           
             $opciones = '
-            <a href="'.BASE_URL.'editar_producto/'.$id_producto.'" class="btn btn-warnig"> editar </a>
-            <button onclick="eliminar_producto('.$id_producto.');"> eliminar </button>
+            <a href="'.BASE_URL.'editar_compra/'.$id_compra.'" class="btn btn-warnig"> editar </a>
+            <button onclick="eliminar_compra('.$id_compra.');"> eliminar </button>
             ';
             // Agregar las opciones al objeto actual
             $arr_Compra[$i]->options = $opciones;

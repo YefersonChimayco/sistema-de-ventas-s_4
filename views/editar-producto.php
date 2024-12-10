@@ -1,18 +1,18 @@
 <div class="container form-nproduct " >
 <form action="" id="Producto">
-    <div>
+    <div class="form-group">
         <label for=""> codigo: </label>
             <input type="text"  class="form-control" required id="codigo" name="codigo" >
     </div>
-    <div>
+    <div class="form-group">
         <label for=""> nombre: </label>
             <input type="text" class="form-control" required id="nombre" name="nombre" >
     </div>
-    <div>
+    <div class="form-group">
         <label for=""> detalle: </label>
             <input type="text" class="form-control" required id="detalle" name="detalle" >
     </div>
-    <div>
+    <div >
         <label for=""> precio:</label>
             <input type="number" class="form-control"  required id="precio" name="precio">
     </div>
@@ -36,7 +36,7 @@
             </select>
     </div>
     <br>
-    <button type="button"   class="btn btn-success"  onclick="registrar_producto();">registrar</button>
+    <button type="button"   class="btn btn-success"  onclick="actualizar_producto();">Actualizar</button>
     </div>
     </div>
     <div class="text-center">
@@ -51,6 +51,6 @@
 <script >listar_proveedores();</script>
 <script >
 //http://localhost/sistema-de-ventas-s_4/editar_producto/4
-const id_p=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1']   ?>
-ver_producto(id_p);
+const id_p=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1'];  ?>;
+verProducto(id_p);
 </script>

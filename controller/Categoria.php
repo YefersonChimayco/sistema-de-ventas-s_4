@@ -12,8 +12,8 @@ if ($tipo=="listar") {
             $id_categoria = $arr_Categorias[$i]->id;
             $categoria = $arr_Categorias[$i]->nombre; 
             $opciones='
-           <a href="'.BASE_URL.'editar_producto/'.$id_producto.'" class="btn btn-warnig"> editar </a>
-            <button onclick="eliminar_producto('.$id_producto.');"> eliminar </button>
+           <a href="'.BASE_URL.'editar_categoria/'.$id_categoria.'" class="btn btn-warnig"> editar </a>
+            <button onclick="eliminar_categoria('.$id_categoria.');"> eliminar </button>
             ';
             $arr_Categorias[$i]->options= $opciones;
         }

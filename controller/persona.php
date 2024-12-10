@@ -62,8 +62,8 @@ if ($tipo=="listarproveedor") {
             $id_persona = $arr_Persona[$i]->razon_social;
             $persona = $arr_Persona[$i]->id; 
             $opciones='
-            <a href="'.BASE_URL.'editar_producto/'.$id_producto.'" class="btn btn-warnig"> editar </a>
-            <button onclick="eliminar_producto('.$id_producto.');"> eliminar </button>
+            <a href="'.BASE_URL.'editar-persona/'.$id_persona.'" class="btn btn-warnig"> editar </a>
+            <button onclick="eliminar_persona('.$id_persona.');"> eliminar </button>
             ';
             $arr_Persona[$i]->options= $opciones;
         }
@@ -72,3 +72,51 @@ if ($tipo=="listarproveedor") {
     }
     echo json_encode($arr_Respuesta);
 } 
+if ($tipo=="ver") {
+    /*  print_r($_POST); */
+     $id_persona = $_POST['id_persona'];
+     $arr_Respuesta = $objPersona->verPersona($id_persona);
+     if (empty($arr_Respuesta)) {
+         $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
+ 
+     } else {
+         $response = array ('status' => false, 'mensaje' =>"Datos encontrados", 'contenido' =>$arr_Respuesta);
+     }
+     echo json_encode($response);
+ }
+ if ($tipo=="actualizar") {
+       $id_persona = $_POST['id_producto'];
+       $nro_identidad= $_POST['nro_identidad'];
+       $razon_social= $_POST['razon_social'];
+       $telefono= $_POST['telefono'];
+       $correo= $_POST['correo'];
+       $departamento= $_POST['departamento'];
+       $provincia= $_POST['provincia'];
+       $distrito= $_POST ['distrito'];
+       $cod_postal= $_POST['cod_postal'];
+       $direccion= $_POST['direccion'];
+       $rol= $_POST['rol'];
+     if ($nombre == "" || $detalle == "" || $precio == "" || $categoria == "" || $proveedor == "") {
+         //repuesta
+         $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
+     } else {
+         $arrProducto = $objProducto->actualizarProducto($id_producto, $codigo, $nombre, $detalle,$precio, $stock, $idcategoria, $imagen, $idproveedor );
+         if ($arrProducto->p_id > 0) {
+             $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
+ 
+             if ($_FILES['imagen']['tmp_name'] != "") {
+                 unlink('../assets/img_productos/' . $img);
+ 
+                 //cargar archivos
+                 $archivo = $_FILES['imagen']['tmp_name'];
+                 $destino = '../assets/img_productos/';
+                 $tipoArchivo = strtolower(pathinfo($_FILES["imagen"]["name"], PATHINFO_EXTENSION));
+                 if (move_uploaded_file($archivo, $destino . '' . $id_producto.'.'.$tipoArchivo)) {
+                 }
+             }
+         } else {
+             $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al actualizar producto');
+         }
+     }
+     echo json_encode($arr_Respuesta);
+ }

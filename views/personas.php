@@ -1,5 +1,5 @@
 <div class="d-flex justify-content-center">
-    <div class="col-6">
+    <div class="col-12">
         <table class="table table-striped table-hover table-bordered">
             <thead class="thead-warning">
                 <tr>
@@ -16,6 +16,7 @@
                     <th>Password</th>
                     <th>Estado</th>
                     <th>Fecha_Reg</th>
+                    <th>Accion</th>
                 </tr>
             </thead>
             <tbody id="tbl_persona">

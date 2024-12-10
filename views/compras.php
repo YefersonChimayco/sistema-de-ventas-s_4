@@ -9,6 +9,7 @@
                     <th>Cantidad</th>
                     <th>Precio</th>
                     <th>id del Trabajador</th>
+                    <th>Accion</th>
           
                 </tr>
             </thead>

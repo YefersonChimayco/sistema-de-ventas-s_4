@@ -64,6 +64,7 @@ async function listar_persona(params) {
                 <td>${item.password}</td>
                 <td>${item.estado}</td>
                 <td>${item.fecha_reg}</td>
+                <td>${item.options}</td>
                 `;
                 document.querySelector('#tbl_persona').appendChild(nueva_fila);
             }); 
@@ -75,5 +76,52 @@ async function listar_persona(params) {
 }
 if (document.querySelector('#tbl_persona')){
     listar_persona();
+}
+async function ver_persona(id) {
+    const formData = new FormData();
+    formData.append('id_persona',id);
+   try {
+       let respuesta = await fetch(base_url+'controller/persona.php?tipo=ver', {
+           method: 'POST',
+           mode : 'cors',
+           cache: 'no-cache',
+           body: formData
+       });
+       json = await respuesta.json();
+       if (json.status) {
+           document.querySelector('#id_persona').value = json.contenido.id;
+           document.querySelector('#nro_identidad').value = json.contenido.nro_identidad;
+           document.querySelector('#razon_social').value = json.contenido.razon_social;
+           document.querySelector('#telefono').value = json.contenido.telefono;
+           document.querySelector('#correo').value = json.contenido.correo;
+           document.querySelector('#departamento').value = json.contenido.departamento;
+           document.querySelector('#provincia').value = json.contenido.provincia;
+           document.querySelector('#distrito').value = json.contenido.distrito;
+           document.querySelector('#cod_postal').value = json.contenido.cod_postal;
+           document.querySelector('#direccion').value = json.contenido.direccion;
+           document.querySelector('#rol').value = json.contenido.rol;
+           document.querySelector('#password').value = json.contenido.password;
+       } else {
+           window.location=base_url+"personas";
+       }
+       console.log(json);  
+   } catch (error) {
+       console.log("ups estas fallando mano"+error);
+   }
+}
+async function actualizarProducto() {
+   const datos = new FormData(frmActualizar);
+   try {
+       let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=actualizar', {
+           method: 'POST',
+           mode: 'cors',
+           cache: 'no-cache',
+           body: datos
+       });
+       json = await respuesta.json();
+       console.log(json);
+   } catch (e) {
+
+   }
 }
 

@@ -124,12 +124,34 @@ async function ver_producto(id) {
         });
         json = await respuesta.json();
         if (json.status) {
-              
+            document.querySelector('#id_producto').value = json.contenido.id;
+            document.querySelector('#codigo').value = json.contenido.codigo;
+            document.querySelector('#nombre').value = json.contenido.nombre;
+            document.querySelector('#detalle').value = json.contenido.detalle;
+            document.querySelector('#precio').value = json.contenido.precio;
+            document.querySelector('#idcategoria').value = json.contenido.idcategoria;
+            document.querySelector('#proveedor').value = json.contenido.proveedor;
+            document.querySelector('#img').value = json.contenido.imagen;
         } else {
             window.location=base_url+"productos";
         }
         console.log(json);  
     } catch (error) {
         console.log("ups estas fallando mano"+error);
+    }
+}
+async function actualizarProducto() {
+    const datos = new FormData(frmActualizar);
+    try {
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=actualizar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos
+        });
+        json = await respuesta.json();
+        console.log(json);
+    } catch (e) {
+
     }
 }
