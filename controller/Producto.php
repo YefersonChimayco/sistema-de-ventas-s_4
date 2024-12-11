@@ -82,18 +82,18 @@ if ($tipo=="ver") {
 }
 if ($tipo=="actualizar") {
 
-      $id_producto = $_POST['id_producto'];
+    $id_producto = $_POST['id_producto'];
     $img = $_POST['img'];
     $nombre = $_POST['nombre'];
     $detalle = $_POST['detalle'];
     $precio = $_POST['precio'];
-    $categoria = $_POST['idcategoria'];
-    $proveedor = $_POST['proveedor'];
-    if ($nombre == "" || $detalle == "" || $precio == "" || $categoria == "" || $proveedor == "") {
+    $idcategoria = $_POST['categoria'];
+    $idproveedor = $_POST['proveedor'];
+    if ($nombre == "" || $detalle == "" || $precio == "" || $idcategoria == "" ||  $idproveedor == "") {
         //repuesta
         $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
     } else {
-        $arrProducto = $objProducto->actualizarProducto($id_producto, $codigo, $nombre, $detalle,$precio, $stock, $idcategoria, $imagen, $proveedor );
+        $arrProducto = $objProducto->actualizarProducto($id_producto, $nombre, $detalle, $precio, $idcategoria,  $idproveedor);
         if ($arrProducto->p_id > 0) {
             $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
 
@@ -112,7 +112,6 @@ if ($tipo=="actualizar") {
         }
     }
     echo json_encode($arr_Respuesta);
-    print_r($_POST['']);
 }
 if ($tipo=="eliminar") {
     $id_producto = $_POST['id_producto'];

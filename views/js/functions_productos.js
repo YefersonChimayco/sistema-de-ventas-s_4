@@ -140,7 +140,7 @@ async function ver_producto(id) {
         console.log("oops ocurrio un error " + error);
     }
 }
-async function actualizarProducto() {
+async function actualizar_producto() {
     const datos = new FormData(frmActualizar);
     try {
         let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=actualizar', {

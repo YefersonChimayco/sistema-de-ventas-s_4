@@ -48,6 +48,6 @@
 
 //http://localhost/sistema-de-ventas-s_4/editar_producto/4
 const id_p=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1'];  ?>;
-verProducto(id_p);
+ver_producto(id_p);
 </script>
 
