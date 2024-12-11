@@ -70,14 +70,15 @@ if ($tipo=="registrar") {
 }
 if ($tipo=="ver") {
    /*  print_r($_POST); */
-    $id_producto = $_POST['id_producto'];
-    $arr_Respuesta = $objProducto->verProducto($id_producto);
-    if (empty($arr_Respuesta)) {
-        $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
-    } else {
-        $response = array ('status' => false, 'mensaje' =>"Datos encontrados", 'contenido' =>$arr_Respuesta);
-    }
-    echo json_encode($response);
+   $id_producto = $_POST['id_producto'];
+   $arr_Respuesta = $objProducto->verProducto($id_producto);
+   //print_r($arr_Respuesta);
+   if (empty($arr_Respuesta)) {
+       $response = array('status' => false, 'mensaje' => "Error, no hay informacion");
+   } else {
+       $response = array('status' => true, 'mensaje' => "datos encontrados", 'contenido' => $arr_Respuesta);
+   }
+   echo json_encode($response);
 }
 if ($tipo=="actualizar") {
 

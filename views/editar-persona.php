@@ -94,11 +94,7 @@
     </div>
 
     <br>
-<<<<<<< HEAD
     <button type="button"   class="btn btn-success"  onclick="actualizar_persona();">Actualizar</button>
-=======
-    <button type="button"   class="btn btn-success"  onclick="registrar_persona();">registrar</button>
->>>>>>> a71632e89ff57d4761ea25b7a0f0169c29d082dd
     </div>
     </div>
     <div class="text-center">

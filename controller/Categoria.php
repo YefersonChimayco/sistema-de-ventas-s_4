@@ -13,7 +13,7 @@ if ($tipo=="listar") {
             $categoria = $arr_Categorias[$i]->nombre; 
             $opciones='
            <a href="'.BASE_URL.'editar_categoria/'.$id_categoria.'" class="btn btn-warnig"> editar </a>
-            <button onclick="eliminar_categoria('.$id_categoria.');"> eliminar </button>
+            <button onclick="eliminar_Categoria('.$id_categoria.');"> eliminar </button>
             ';
             $arr_Categorias[$i]->options= $opciones;
         }
@@ -43,4 +43,15 @@ if ($tipo=="registrar") {
     } 
 
 }
+if ($tipo=="eliminar") {
+    $id_categoria = $_POST['id_categoria'];
+    $arr_Respuesta = $objCategoria->eliminarCategoria($id_categoria);
+    if (empty($arr_Respuesta)) {
+        $response = array ('status' => false);
+    } else {
+        $response = array ('status' => true);
+    }
+    echo json_encode($response);
+}
+
 ?>
