@@ -90,10 +90,10 @@ if ($tipo=="actualizar") {
     $id_categoria = $_POST['idcategoria'];
     $id_proveedor = $_POST['proveedor'];
     if ($nombre == "" || $detalle == "" || $precio == "" || $id_categoria == "" ||  $id_proveedor == "") {
-        //repuesta
+        
         $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
-    } else {
-        $arrProducto = $objProducto->actualizarProducto($id_producto, $nombre, $detalle, $precio, $id_categoria,  $id_proveedor, $tipo_archivo);
+   } else {
+        $arrProducto = $objProducto->actualizarProducto($id_producto,$img ,$nombre, $detalle, $precio, $id_categoria,  $id_proveedor);
         if ($arrProducto->p_id > 0) {
             $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
 

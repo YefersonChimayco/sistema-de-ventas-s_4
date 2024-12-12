@@ -19,7 +19,7 @@
     </div>
     <div>
         <label for="">Categoría:</label>
-        <select name="categoria" id="categoria" class="form-control" required >
+        <select name="idcategoria" id="idcategoria" class="form-control" required >
             <option>Seleccione</option>
         </select>
     </div>
