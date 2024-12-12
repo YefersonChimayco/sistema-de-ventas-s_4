@@ -122,14 +122,14 @@ async function actualizarProducto() {
    } catch (e) {
 
    }
-async function actualizar_producto() {
+/* async function actualizar_producto() {
     const datos = new FormData(frmProducto);
     try {
         let respuesta = await fetch(base_url+'controller/persona.php?tipo=listar')
     } catch (error) {
         
     }
-}
+} */
 }
 async function eliminar_persona(id) {
     swal({
@@ -161,7 +161,7 @@ async function fnt_eliminar(id) {
         swal("Eliminar", "eliminado correctamente","success");
         document.querySelector('#fila'+id).remove();
     }else{
-        swal("Eliminar", "error al elimninar producto","warning");
+        swal("Eliminar", "error al elimninar persona","warning");
 
     }
    } catch (e) {

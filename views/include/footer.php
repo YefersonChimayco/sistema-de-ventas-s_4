@@ -125,7 +125,7 @@
 <script src="<?php echo BASE_URL; ?>views/js/shorts.js"></script>
   <script src="<?php echo BASE_URL; ?>views/js/menu.js" defer></script>
 	<script src="<?php echo BASE_URL; ?>views/js/cartService.js" defer></script>
-  <script src="<?php echo BASE_URL; ?>views/js/bootstrap.min.js" ></script>
+<!--   <script src="<?php echo BASE_URL; ?>views/js/bootstrap.min.js" ></script> -->
 </html>
 
     
