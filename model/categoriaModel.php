@@ -30,6 +30,11 @@ class CategoriaModel{
         print_r($codigo);
         
     }
+    public function verCategoria($id){
+        $sql = $this->conexion->query("SELECT*FROM categoria WHERE id='$id'");
+        $sql = $sql->fetch_object();
+        return $sql;
+    }
     public function eliminarCategoria($id){
         $sql = $this->conexion->query("CALL eliminarcategoria('{$id}')");
         $sql =$sql->fetch_object(); 

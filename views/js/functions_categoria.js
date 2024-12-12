@@ -60,6 +60,33 @@ async function listar_categoria() {
 if (document.querySelector('#tbl_categoria')){
     listar_categoria();
 }
+async function ver_categoria(id) {
+    const formdata = new FormData();
+    formdata.append('id_categoria', id);
+    try {
+        let respuesta = await fetch(base_url+'controller/Categoria.php?tipo=ver',{
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if(json.status){
+            document.querySelector('#id_categoria').value = json.contenido.id;
+            document.querySelector('#nombre').value = json.contenido.nombre;
+            document.querySelector('#detalle').value = json.contenido.detalle;
+           
+        }else{
+            window.location = base_url + "categorias";
+        }
+        
+        console.log(json);
+        
+    } catch (error) {
+        console.log("oops ocurrio un error "+error);
+        
+    }
+}
 
 async function eliminar_categoria(id) {
     swal({

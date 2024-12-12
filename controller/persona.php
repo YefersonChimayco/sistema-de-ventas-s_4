@@ -74,7 +74,7 @@ if ($tipo=="listarproveedor") {
     echo json_encode($arr_Respuesta);
 } 
 if ($tipo=="ver") {
-    /*  print_r($_POST); */
+   
      $id_persona = $_POST['id_persona'];
      $arr_Respuesta = $objPersona->verPersona($id_persona);
      if (empty($arr_Respuesta)) {
@@ -85,8 +85,8 @@ if ($tipo=="ver") {
      }
      echo json_encode($response);
  }
- /* if ($tipo=="actualizar") {
-       $id_persona = $_POST['id_producto'];
+ if ($tipo=="actualizar") {
+       $id_persona = $_POST['id_persona'];
        $nro_identidad= $_POST['nro_identidad'];
        $razon_social= $_POST['razon_social'];
        $telefono= $_POST['telefono'];
@@ -97,38 +97,23 @@ if ($tipo=="ver") {
        $cod_postal= $_POST['cod_postal'];
        $direccion= $_POST['direccion'];
        $rol= $_POST['rol'];
-     if ($nombre == "" || $detalle == "" || $precio == "" || $categoria == "" || $proveedor == "") {
-         //repuesta
-         $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
+       if ($nro_identidad== "" || $razon_social == "" || $telefono == "" || $correo == "" || $departamento == "" || $provincia == ""  || $distrito == ""  || $cod_postal== "" || $direccion == "" || $rol == "" ) {
+           //repuesta
+           $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
      } else {
-         $arrProducto = $objProducto->actualizarProducto($id_producto, $codigo, $nombre, $detalle,$precio, $stock, $idcategoria, $imagen, $idproveedor );
-         if ($arrProducto->p_id > 0) {
+         $arrPersona = $objPersona->actualizarPersona($id_persona, $nro_identidad, $razon_social, $telefono, $correo, $departamento, $provincia, $distrito, $cod_postal, $direccion, $rol );
+         if ($arrPersona->p_id > 0) {
              $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
- 
-             if ($_FILES['imagen']['tmp_name'] != "") {
-                 unlink('../assets/img_productos/' . $img);
- 
-                 //cargar archivos
-                 $archivo = $_FILES['imagen']['tmp_name'];
-                 $destino = '../assets/img_productos/';
-                 $tipoArchivo = strtolower(pathinfo($_FILES["imagen"]["name"], PATHINFO_EXTENSION));
-                 if (move_uploaded_file($archivo, $destino . '' . $id_producto.'.'.$tipoArchivo)) {
-                 }
-             }
+             
          } else {
-             $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al actualizar producto');
+             $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al actualizar persona');
          }
      }
      echo json_encode($arr_Respuesta);
-     $id_producto = $_POST['id_persona'];
-     $arr_Respuesta = $objProducto->verPersona($id_persona);
-     if (empty($arr_Respuesta)) {
-         $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
-     } else {
-         $response = array ('status' => false, 'mensaje' =>"Error, no hay ifno");
-     }
      
- } */
+     
+     
+ } 
  if ($tipo=="eliminar") {
     $id_persona = $_POST['id_persona'];
     $arr_Respuesta = $objPersona->eliminarPersona($id_persona);

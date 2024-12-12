@@ -108,10 +108,10 @@ async function ver_persona(id) {
        console.log("ups estas fallando mano"+error);
    }
 }
-async function actualizarProducto() {
+async function actualizar_persona() {
    const datos = new FormData(frmActualizar);
    try {
-       let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=actualizar', {
+       let respuesta = await fetch(base_url + 'controller/persona.php?tipo=actualizar', {
            method: 'POST',
            mode: 'cors',
            cache: 'no-cache',

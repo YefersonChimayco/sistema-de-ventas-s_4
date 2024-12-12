@@ -11,11 +11,9 @@ if ($tipo=="listar") {
         for ($i=0; $i <count($arr_Categorias) ; $i++) { 
             $id_categoria = $arr_Categorias[$i]->id;
             $categoria = $arr_Categorias[$i]->nombre; 
-            $opciones='
-            <a href="'.BASE_URL.'editar-categoria/'.$id_categoria.'" class="btn btn-warnig"> editar </a>
-            <button onclick="eliminar_categoria('.$categoria.');"> eliminar </button>
-            ';
-            $arr_Categorias[$i]->options= $opciones;
+            $opciones = '<a href="'.BASE_URL.'editar-categoria'.$id_categoria.'" ><i class="fas fa-edit"></i> Editar</a> 
+            <button onclick="eliminar_categoria('.$id_categoria.');"class="btn btn-danger">Eliminar</button>';
+        $arr_Categorias[$i]->options = $opciones;
         }
         $arr_Respuesta['status']= true;
         $arr_Respuesta['contenido']= $arr_Categorias;
@@ -43,6 +41,21 @@ if ($tipo=="registrar") {
     } 
 
 }
+if($tipo == 'ver'){
+    $id_categoria = $_POST['id_categoria'];
+    $arr_Respuesta = $objCategoria->verCategoria($id_categoria);
+    if(empty($arr_Respuesta)){
+
+        $response = array('status'=>false, 'mensaje'=>"Error, no hay informacion");
+
+    }else{
+        $response = array('status'=>true,'mensaje'=>"datos encontrados", 'contenido'=>$arr_Respuesta);
+
+    }
+    echo json_encode($response);
+
+}
+
 if ($tipo=="eliminar") {
     $id_categoria = $_POST['id_categoria'];
     $arr_Respuesta = $objCategoria->eliminarCategoria($id_categoria);
