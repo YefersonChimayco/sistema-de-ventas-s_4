@@ -45,8 +45,6 @@ if ($tipo =="listar") {
             $opciones = '
             <a href="'.BASE_URL.'editar_compra/'.$id_compra.'" class="btn btn-warnig"> editar </a>
             <button onclick="eliminar_compra('.$id_compra.');"> eliminar </button>
-            <a href="'.BASE_URL.'editar_compra/'.'" class="btn btn-warnig"> editar </a>
-            <button onclick="eliminar_compra('.');"> eliminar </button>
             ';
             // Agregar las opciones al objeto actual
             $arr_Compra[$i]->options = $opciones;
