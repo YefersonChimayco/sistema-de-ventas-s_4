@@ -65,7 +65,6 @@ if ($tipo=="listarproveedor") {
             $opciones='
             <a href="'.BASE_URL.'editar-persona/'.$id_persona.'" class="btn btn-warnig"> editar </a>
             <button onclick="eliminar_persona('.$persona.');"> eliminar </button>
-            
             ';
             $arr_Persona[$i]->options= $opciones;
         }

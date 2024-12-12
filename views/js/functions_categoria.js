@@ -29,7 +29,7 @@ try {
     console.log("Oops, ocurrio un error" + e);
 }
 }
-async function listar_categoria(params) {
+async function listar_categoria() {
     try {
 
         let respuesta = await fetch(base_url+'controller/Producto.php?tipo=listar');
@@ -75,7 +75,7 @@ async function eliminar_categoria(id) {
     
 }
 async function fnt_eliminar(id) {
-   /*  alert("producto eliminado: id="+ id); */
+   
    const formdata = new FormData();
    formdata.append('id_categoria', id);
    try {
@@ -91,7 +91,7 @@ async function fnt_eliminar(id) {
         swal("Eliminar", "eliminado correctamente","success");
         document.querySelector('#fila'+id).remove();
     }else{
-        swal("Eliminar", "error al elimninar producto","warning");
+        swal("Eliminar", "error al elimninar categoria","warning");
 
     }
    } catch (e) {

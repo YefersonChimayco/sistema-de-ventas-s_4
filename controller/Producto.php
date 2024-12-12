@@ -87,13 +87,13 @@ if ($tipo=="actualizar") {
     $nombre = $_POST['nombre'];
     $detalle = $_POST['detalle'];
     $precio = $_POST['precio'];
-    $idcategoria = $_POST['categoria'];
-    $idproveedor = $_POST['proveedor'];
-    if ($nombre == "" || $detalle == "" || $precio == "" || $idcategoria == "" ||  $idproveedor == "") {
+    $id_categoria = $_POST['idcategoria'];
+    $id_proveedor = $_POST['proveedor'];
+    if ($nombre == "" || $detalle == "" || $precio == "" || $id_categoria == "" ||  $id_proveedor == "") {
         //repuesta
         $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
     } else {
-        $arrProducto = $objProducto->actualizarProducto($id_producto, $nombre, $detalle, $precio, $idcategoria,  $idproveedor);
+        $arrProducto = $objProducto->actualizarProducto($id_producto, $nombre, $detalle, $precio, $id_categoria,  $id_proveedor, $tipo_archivo);
         if ($arrProducto->p_id > 0) {
             $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
 
@@ -103,8 +103,8 @@ if ($tipo=="actualizar") {
                 //cargar archivos
                 $archivo = $_FILES['imagen']['tmp_name'];
                 $destino = '../assets/img_productos/';
-                $tipoArchivo = strtolower(pathinfo($_FILES["imagen"]["name"], PATHINFO_EXTENSION));
-                if (move_uploaded_file($archivo, $destino . '' . $id_producto.'.'.$tipoArchivo)) {
+                $tipo_archivo = strtolower(pathinfo($_FILES["imagen"]["name"], PATHINFO_EXTENSION));
+                if (move_uploaded_file($archivo, $destino . '' . $id_producto.'.'.$tipo_archivo)) {
                 }
             }
         } else {
