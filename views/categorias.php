@@ -7,13 +7,10 @@
                     <th>Nombre</th>
                     <th>Detalle</th>
                     <th>Accion</th>
-                    
-                 
                 </tr>
             </thead>
             <tbody id="tbl_categoria">
             <a href="<?php echo BASE_URL?>administracion" class="cre btn btn-danger m-20" style="width: 300px;">Volver</a>
-
             </tbody>
         </table>
     </div>
